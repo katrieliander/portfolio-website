@@ -4,7 +4,9 @@ Primary Color (dark): rgb(36, 8, 49);
 Secondary Color (beige): rgb(229, 215, 190);
 Secondary Color (light): rgb(254, 239, 222);
 */
-
+* {
+  box-sizing: border-box;
+}
 body {
   background-color: #ffffff;
   font-family: 'Noto-sans JP', sans-serif;
@@ -18,12 +20,12 @@ h1, h2, h3, h4 {
   line-height: 1.4;
 }
 h1 {
-  font-size: 2.75em;
-  font-weight: 700;
+  font-size: 2.25em;
+  font-weight: 500;
 }
 
 h2 {
-  font-size: 1.85em;
+  font-size: 1.50em;
   font-weight: 700;
 }
 
@@ -73,10 +75,85 @@ a:focus {
   background-color: transparent;
   color: #4120A9 !important;
   border: 2px solid #4120A9;
+  margin: auto;
 }
 .button.contact:hover,
 .button.contact:focus,
 .button.contact:active {
   background-color: #4120A9;
   color: #ffffff !important;
+}
+.image {
+  width: 200px; /* Sets my profile picture to 200px */
+}
+.image.contact {
+  width: 40px; /* Defines linkedin logo */
+}
+.name {
+  font-weight: 700;
+  font-size: 1.25em;
+  color: #000000 !important;
+}
+/* Layout styling */
+.container {
+  padding: 0 15px;
+}
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+#work .row {
+  padding-bottom: 25px; border-bottom: 1px solid #4a4a4a;
+}
+#hero h1 {
+  text-align: center; /* Centers text */
+}
+#h1 h1 {
+  text-align: center; /* Centers text */
+}
+header {
+  background-color: #FFFFFF;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+}
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+nav > ul > li {
+  display: inline-block;
+}
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #4120A9;
+}
+nav > ul > li > a:visited {
+color: #4120A9;
+}
+nav > ul > li > a:hover {
+color: #A1A9FE;
+text-decoration: underline;
+}
+nav > ul > li > a:focus {
+color: #A1A9FE;
+text-decoration: underline;
+}
+nav > ul > li > a:active {
+color: #A16AE8;
+}
+#hero {
+  background-color: #EEEDE7;
+  padding: 20px 20px;
+  display: inline-block;
+  text-align:center;
+  width: 100%;
+}
+main {
+  padding-top: 133px;
+}
+.center {
+  text-align: center;
 }

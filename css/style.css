@@ -111,7 +111,7 @@ a:focus {
   text-align: center; /* Centers text */
 }
 header {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   text-align: center;
   padding: 10px 0;
   position: fixed;
@@ -155,8 +155,73 @@ main {
   padding-top: 133px;
 }
 footer {
-  padding-top: 133px;
+  padding-top: 10px;
 }
 .center {
   text-align: center;
+}
+#contact {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align:center;
+}
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+header {
+text-align: unset;
+padding: 30px 0 13px;
+}
+nav {
+  width: auto;
+  float:right;
+}
+main {
+  padding-top: 99px;
+}
+body {
+  font-size: 18px;
+}
+#hero span {
+  display: block;
+}
+.col-md-6 {
+  width: 50%;
+}
+[class*="col-"] {
+  float: left;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+#about-page h3 {
+  margin-top: 0;
+}
+}/* end of medium device */
+/* ==============================
+
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+.col-lg-5 {
+  width: 41.66%;
+}
+.col-lg-7 {
+  width: 58.33%;
+}
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right:auto;
+}
+}/* end of large device */
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
 }

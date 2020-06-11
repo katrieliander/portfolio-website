@@ -41,18 +41,18 @@ img {
   width: 100%;
 }
 a {
-  color: #4120A9;
+  color: #82807F;
   text-decoration: none; /* No underlining */
 }
 a:visited { /* visited link */
-  color: #4120A9;
+  color: #82807F;
 }
 a:active { /* selected link */
-  color: #A16AE8;
+  color: #0E0314;
 }
 a:hover,
 a:focus {
-  color: #A1A9FE;
+  color: #0E0314;
   text-decoration: underline;
 }
 .button {
@@ -60,10 +60,11 @@ a:focus {
   background-color: #240831;
   color: #ffffff !important; /* needed to override the default link color */
   font-weight: 400;
-  padding: 10px;
-  border-radius: 3px;
+  font-size: 0.85em;
+  padding: 10px 15px 10px 15px;
+  border-radius: 20px;
   border-bottom: 2px solid #240831; /* width of the border, type, color */
-  transition: 0.2s opacity;
+  transition: opacity 0.2s, background-color 0.3s;
 }
 .button:hover,
 .button:focus,
@@ -73,15 +74,16 @@ a:focus {
 }
 .button.contact {
   background-color: transparent;
-  color: #4120A9 !important;
-  border: 2px solid #4120A9;
+  color: #0E0314 !important;
+  border: 2px solid #0E0314;
   margin: auto;
 }
 .button.contact:hover,
 .button.contact:focus,
 .button.contact:active {
-  background-color: #4120A9;
+  background-color: #0E0314;
   color: #ffffff !important;
+  opacity: 1 !important;
 }
 .image {
   width: 200px; /* Sets my profile picture to 200px */
@@ -126,23 +128,23 @@ nav > ul > li {
 }
 nav > ul > li > a {
   padding: 0 15px;
-  text-transform: uppercase;
-  font-weight: 600;
-  color: #4120A9;
+  font-weight: 400;
+  color: #82807F;
+  cursor: pointer;
 }
 nav > ul > li > a:visited {
-color: #4120A9;
+color: #82807F;
 }
 nav > ul > li > a:hover {
-color: #A1A9FE;
+color: #0E0314;
 text-decoration: underline;
 }
 nav > ul > li > a:focus {
-color: #A1A9FE;
+color: #0E0314;
 text-decoration: underline;
 }
 nav > ul > li > a:active {
-color: #A16AE8;
+color: #0E0314;
 }
 #hero {
   background-color: #EEEDE7;
@@ -165,6 +167,78 @@ footer {
   margin: 0 auto;
   text-align:center;
 }
+/* CSS animation */
+  /* Animation: sun */
+@keyframes circle-moves {
+ from {
+   transform: rotateZ(0deg);
+   }
+   to {
+     transform: rotateZ(360deg);
+     }
+     }
+  #rays {
+    animation: circle-moves 20s infinite linear;
+    transform-origin: center;
+    transform-box: fill-box;
+    }
+@keyframes sun-shrinks {
+  from {
+      transform: scale(1);
+}
+  to {
+    transform: scale(0.4);
+  }
+  }
+  #center-circle {
+  animation: sun-shrinks 8s infinite linear;
+  transform-origin: center;
+  transform-box: fill-box;
+    }
+    /* Animation: mountain */
+@keyframes sun-move {
+      from {transform: translateY(0px);}
+      to {transform: translateY(80px);}
+      }
+#sunmountain {
+  animation: sun-move 8s infinite alternate linear;
+    }
+
+  /* Animation: Top and Bottom borders go out in nav */
+.navigation a:before,
+.navigation a:after
+{
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background: #FFF;
+    content: "";
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.navigation a:before
+{
+  top: 0px;
+  transform: translateY(10px);
+  }
+
+.navigation a:after
+{
+  bottom: 0px;
+  transform: translateY(-10px);
+  }
+
+  .navigation a:hover:before,
+  .navigation a:hover:after
+{
+  opacity: 1;
+  transform: translateY(0px);
+  }
+
+
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -220,8 +294,3 @@ Large devices (1024px or larger)
   margin-right:auto;
 }
 }/* end of large device */
-/* ==============================
-X-large devices (1440px or larger)
-================================= */
-@media only screen and (min-width: 1440px) {
-}

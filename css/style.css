@@ -11,7 +11,7 @@ body {
   background-color: #ffffff;
   font-family: 'Noto-sans JP', sans-serif;
   font-size: 16px; /* Sets the font size to 16px */
-  font-weight: 400; /* Sets the font weight to 400 */
+  font-weight: 300; /* Sets the font weight to 400 */
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
   color: #0E0314;
 }
@@ -22,6 +22,7 @@ h1, h2, h3, h4 {
 h1 {
   font-size: 2.25em;
   font-weight: 500;
+  text-align: center;
 }
 
 h2 {
@@ -39,6 +40,12 @@ h4 {
 }
 img {
   width: 100%;
+}
+#contact {
+  background-color: #edecfe;
+  margin: 0 auto;
+  text-align:center;
+  padding-bottom: 30px;
 }
 a {
   color: #82807F;
@@ -86,7 +93,7 @@ a:focus {
   opacity: 1 !important;
 }
 .image {
-  width: 200px; /* Sets my profile picture to 200px */
+  width: 300px; /* Sets my profile picture to 200px */
 }
 .image.contact {
   width: 40px; /* Defines linkedin logo */
@@ -96,7 +103,10 @@ a:focus {
   font-size: 1.25em;
   color: #000000 !important;
 }
-/* Layout styling */
+.copyright {
+  font-size: 0.7em;
+  }
+/* Layout styling general*/
 .container {
   padding: 0 15px;
 }
@@ -104,10 +114,7 @@ a:focus {
   margin: 25px 0; /* 25px top and bottom, 0 left and right */
 }
 #work .row {
-  padding-bottom: 25px; border-bottom: 1px solid #4a4a4a;
-}
-#hero h1 {
-  text-align: center; /* Centers text */
+  padding-bottom: 25px;
 }
 #h1 h1 {
   text-align: center; /* Centers text */
@@ -147,11 +154,13 @@ nav > ul > li > a:active {
 color: #0E0314;
 }
 #hero {
-  background-color: #EEEDE7;
-  padding: 20px 20px;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 40px;
   display: inline-block;
   text-align:center;
-  width: 100%;
+  width: 100%
 }
 main {
   padding-top: 133px;
@@ -162,11 +171,41 @@ footer {
 .center {
   text-align: center;
 }
-#contact {
-  max-width: 700px;
+/* Layout styling about page */
+#about-section {
+  max-width: 1000px;
   margin: 0 auto;
-  text-align:center;
+    }
+#about-page h2 {
+  text-align: center;
+  }
+#about-section {
+  text-align: center;
+  }
+.column-skills ul {
+  text-align: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+    }
+.story {
+  padding-bottom: 20px;
+    }
+.skills {
+  padding-top: 20px;
+    }
+/* Layout styling Projects page */
+#aida-page h2 {
+  text-align: center;
+  }
+
+/* Layout styling Index page */
+.case {
+  background-color: #B5E0D6;
+  display: flex;
+  align-items: center;
 }
+
 /* CSS animation */
   /* Animation: sun */
 @keyframes circle-moves {
@@ -263,6 +302,9 @@ body {
 .col-md-6 {
   width: 50%;
 }
+.col-md-4 {
+  width: 33.33%;
+  }
 [class*="col-"] {
   float: left;
   padding-right: 10px;
@@ -282,8 +324,14 @@ body {
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
+.col-lg-4 {
+  width: 33.33%;
+  }
 .col-lg-5 {
   width: 41.66%;
+}
+.col-lg-6 {
+  width: 50%;
 }
 .col-lg-7 {
   width: 58.33%;

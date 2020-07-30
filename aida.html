@@ -8,19 +8,23 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://use.fontawesome.com/a9ebc16df7.js"></script>
 </head>
   <body id="aida-page">
     <header id="myHeader">
       <div class="container">
+        <div class="navtoggle" id="myNavtoggle">
         <a href="index.html" class="name">Katri Eliander</a>
       <nav>
-        <ul class="navigation">
+  <ul class="navigation">
   <li><a href="index.html">Work</a></li>
   <li><a href="about.html">About</a></li>
-  <li><a href="#contact">Contact</a></li>
+  <li><a href="#contact" onclick="menuToggle()">Contact</li>
+  <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
 </ul>
-</div>
 </nav>
+</div><!-- end container div-->
+</div><!-- end navtoggle div-->
     </header>
     <main id="Main">
       <div class="container"><!-- open main-->
@@ -404,7 +408,7 @@
       <div class="container"><!-- open whole orange block-->
         <div><!-- open yellow container-->
           <h2>Get in touch!</h2>
-          <p><span style="font-size: 85%">Please don't hesitate to get in touch if like my work and want to discuss work opportunities!</span></p>
+          <p><span style="font-size: 85%">Please don't hesitate to get in touch if you like my work and want to discuss work opportunities!</span></p>
 <div>
   <a href="mailto:katrieliander@gmail.com" class="button contact">Email me</a>
   </div>
@@ -419,5 +423,10 @@
         </div><!-- end yellow container-->
       </div><!-- end whole orange block-->
     </footer>
+    <script
+  src="https://code.jquery.com/jquery-migrate-3.3.1.min.js"
+  integrity="sha256-APllMc0V4lf/Rb5Cz4idWUCYlBDG3b0EcN1Ushd3hpE="
+  crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
   </body>
 </html>

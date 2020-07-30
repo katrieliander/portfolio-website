@@ -4,46 +4,51 @@
     <meta charset="utf-8">
     <meta name="author" content="Katri Eliander">
     <title>Katri Eliander | UX/UI designer in Berlin</title>
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://use.fontawesome.com/a9ebc16df7.js"></script>
 </head>
 <body>
     <header id="myHeader">
       <div class="container">
+        <div class="navtoggle" id="myNavtoggle">
         <a href="index.html" class="name">Katri Eliander</a>
       <nav>
-  <ul>
+  <ul class="navigation">
   <li><a href="index.html">Work</a></li>
   <li><a href="about.html">About</a></li>
-  <li><a href="#contact">Contact</a></li>
+  <li><a href="#contact" onclick="menuToggle()">Contact</li>
+  <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
 </ul>
 </nav>
-</div>
+</div><!-- end container div-->
+</div><!-- end navtoggle div-->
     </header>
     <main id="Main">
       <div><!-- open main section-->
       <div id="hero"><!-- open yellow container-->
     <div class="container"><!-- open orange container-->
-    <h1>Hi, I'm Katri. <span>I'm a UX/UI Designer based in Berlin.</span></h2>
-    <p>I have a passion for creating user-centric products that do good and are enjoyable to use. My marketing
-      background makes me an analytical and solution-oriented designer who strives to design products
-      where user and business needs meet.</p>
+    <h1>Hi. I'm Katri, a Berlin based UX & UI Designer driven by curiosity, empathy and a desire to create positive change through my design.</h1>
     </div><!-- end yellow container-->
     </div><!-- end orange container-->
     <div id="work"><!-- open whole orange block-->
       <div class="container"><!-- open yellow container-->
         <h2>My work</h2>
       <div class="row case"><!-- open green row that holds 2 columns for one project-->
-            <div class="column col-md-6 col-lg-7" ><!-- open first column (used for image)-->
-            <picture>
+            <div class="column col-md-6 col-lg-7"><!-- open first column (used for image)-->
+              <div class="shrink">
+          <a href="aida.html">
+          <picture>
   <source srcset="img/aida/aida mobile.jpg" media="(max-width:767px)">
-  <img src="img/aida/aida desktop.jpg" alt="Aida app"></picture>
+  <img src="img/aida/aida desktop.jpg" alt="Aida app"></picture></a>
+</div><!-- end shrink-->
 </div><!-- end first column (used for image)-->
 <div class="column col-md-6 col-lg-5"><!-- open second column (used for text)-->
   <h3>Aida - an iOS healthcare app for women</h3>
-<p>User research | Wireframing | Prototyping | UI design | User testing <br><br><a href="aida.html" class="button">Read more</a></p>
+<p>User research | Wireframing | Prototyping | UI design | User testing <br></p>
+  <p class="center"><a href="aida.html" class="button">Read more</a></p>
 </div><!-- end second column (used for text)-->
 </div><!-- end green row that holds 2 columns for one project-->
 <div class="row"><!-- open green row that holds 2 columns for one project-->
@@ -120,7 +125,7 @@
       <div class="container"><!-- open whole orange block-->
         <div><!-- open yellow container-->
           <h2>Get in touch!</h2>
-          <p><span style="font-size: 85%">Please don't hesitate to get in touch if like my work and want to discuss work opportunities!</span></p>
+          <p><span style="font-size: 85%">Please don't hesitate to get in touch if you like my work and want to discuss work opportunities!</span></p>
 <div>
   <a href="mailto:katrieliander@gmail.com" class="button contact">Email me</a>
   </div>
@@ -135,5 +140,10 @@
        </div><!-- end yellow container-->
       </div><!-- end whole orange block-->
     </footer>
+    <script
+  src="https://code.jquery.com/jquery-migrate-3.3.1.min.js"
+  integrity="sha256-APllMc0V4lf/Rb5Cz4idWUCYlBDG3b0EcN1Ushd3hpE="
+  crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
   </body>
 </html>

@@ -20,19 +20,19 @@ h1, h2, h3, h4 {
   line-height: 1.4;
 }
 h1 {
-  font-size: 2.25em;
-  font-weight: 500;
+  font-size: 1.80em;
+  font-weight: 300;
   text-align: center;
 }
 
 h2 {
   font-size: 1.50em;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 h3 {
   font-size: 1.35em;
-  font-weight: 700;
+  font-weight: 500;
 }
 h4 {
   font-size: 1.20em;
@@ -92,15 +92,12 @@ a:focus {
   color: #ffffff !important;
   opacity: 1 !important;
 }
-.image {
-  width: 300px; /* Sets my profile picture to 200px */
-}
 .image.contact {
   width: 40px; /* Defines linkedin logo */
 }
 .name {
   font-weight: 700;
-  font-size: 1.25em;
+  font-size: 1em;
   color: #000000 !important;
 }
 .copyright {
@@ -108,31 +105,26 @@ a:focus {
   }
 /* Layout styling general*/
 .container {
-  padding: 0 15px;
+  padding: 0 15px; /* 0px top and bottom, 15 left and right */
 }
 .row {
-  margin: 25px 0; /* 25px top and bottom, 0 left and right */
-}
-#work .row {
-  padding-bottom: 25px;
+  margin: 30px 0; /* 25px top and bottom, 0 left and right */
 }
 #h1 h1 {
   text-align: center; /* Centers text */
 }
 header {
-  background-color: #ffffff;
-  text-align: center;
-  padding: 10px 0;
+  background-color: #f2f2f2;
+  padding: 20px 0 12px;
   position: fixed;
   width: 100%;
 }
 nav > ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
-nav > ul > li {
-  display: inline-block;
-}
+
 nav > ul > li > a {
   padding: 0 15px;
   font-weight: 400;
@@ -154,16 +146,16 @@ nav > ul > li > a:active {
 color: #0E0314;
 }
 #hero {
-  padding-top: 20px;
-  padding-right: 20px;
-  padding-left: 20px;
-  padding-bottom: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   display: inline-block;
   text-align:center;
-  width: 100%
+  width: 100%;
 }
 main {
-  padding-top: 133px;
+  padding-top: 70px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 footer {
   padding-top: 10px;
@@ -172,6 +164,9 @@ footer {
   text-align: center;
 }
 /* Layout styling about page */
+.image {
+  width: 400px; /* Sets my profile picture to 200px */
+}
 #about-section {
   max-width: 1000px;
   margin: 0 auto;
@@ -200,14 +195,47 @@ footer {
   }
 
 /* Layout styling Index page */
-.case {
-  background-color: #B5E0D6;
+#work .container { /* Tried to remove the padding on left and bottom of image */
+  padding: 0;
+}
+
+.flexbox {
   display: flex;
   align-items: center;
 }
-
-/* CSS animation */
-  /* Animation: sun */
+/* Hamburger menu */
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  padding-right: 0;
+  top: 2px;
+  font-size: 20px;
+}
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+  }
+.navtoggle.responsive li {
+  display: block;
+  padding: 10px 0;
+  }
+  .navtoggle.responsive li:last-child {
+    padding: 0 0 10px;
+      }
+/* CSS transition image shrinks when hover - not working*/
+  .shrink {
+  transition: 0.3s ease;
+  }
+  .shrink:hover {
+  transform: scale(0.9);
+  }
+  /* CSS animation */
+    /* Animation: sun */
 @keyframes circle-moves {
  from {
    transform: rotateZ(0deg);
@@ -243,52 +271,27 @@ footer {
   animation: sun-move 8s infinite alternate linear;
     }
 
-  /* Animation: Top and Bottom borders go out in nav */
-.navigation a:before,
-.navigation a:after
-{
-    position: absolute;
-    left: 0px;
-    width: 100%;
-    height: 2px;
-    background: #FFF;
-    content: "";
-    opacity: 0;
-    transition: all 0.3s;
-}
-
-.navigation a:before
-{
-  top: 0px;
-  transform: translateY(10px);
-  }
-
-.navigation a:after
-{
-  bottom: 0px;
-  transform: translateY(-10px);
-  }
-
-  .navigation a:hover:before,
-  .navigation a:hover:after
-{
-  opacity: 1;
-  transform: translateY(0px);
-  }
-
-
-
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
 header {
 text-align: unset;
-padding: 30px 0 13px;
+padding: 20px 0 12px;
 }
+h1 {
+  font-size: 2.25em;
+  }
 nav {
   width: auto;
   float:right;
+  margin-top: 4px;
+}
+nav > ul {
+  margin: 1em 0;
+  }
+nav > ul > li {
+  display: inline-block; /* makes nav items side by side */
 }
 main {
   padding-top: 99px;
@@ -299,6 +302,14 @@ body {
 #hero span {
   display: block;
 }
+#hero {
+  padding-top: 60px;
+  padding-bottom: 50px;
+  }
+.name {
+    font-weight: 700;
+    font-size: 1.50em;
+    }
 .col-md-6 {
   width: 50%;
 }
@@ -318,6 +329,50 @@ body {
 #about-page h3 {
   margin-top: 0;
 }
+.case {
+  display: flex;
+  align-items: center;
+}
+.navtoggle li:not(:last-child) { /* makes nav items visible on not-mobile screns */
+  display: inline-block;
+}
+.navtoggle li:last-child { /* hides hamburger menu */
+  display: none;
+}
+/* Animation: Top and Bottom borders go out in nav */
+.navigation a:before,
+.navigation a:after
+{
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  height: 2px;
+  background: #0E0314;
+  content: "";
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.navigation a:before
+{
+top: 0px;
+transform: translateY(10px);
+}
+
+.navigation a:after
+{
+bottom: 0px;
+transform: translateY(-10px);
+}
+
+.navigation a:hover:before,
+.navigation a:hover:after
+{
+opacity: 1;
+transform: translateY(0px);
+}
+
+
 }/* end of medium device */
 /* ==============================
 

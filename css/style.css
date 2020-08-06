@@ -336,7 +336,7 @@ Medium devices (640px and larger)
 @media only screen and (min-width: 640px) {
   header {
     text-align: unset;
-    padding: 20px 0 12px;
+    padding-top: 20px;
   }
 
   h1 {
@@ -381,6 +381,9 @@ Medium devices (640px and larger)
   #hero span {
     display: block;
   }
+  .highlights {
+    font-size: 32px;
+    }
 
   #hero {
     padding-top: 60px;
@@ -472,6 +475,7 @@ Large devices (1024px or larger)
     margin-left: auto;
     margin-right: auto;
   }
+}
 }
 
 /* end of large device */

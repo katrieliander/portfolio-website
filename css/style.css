@@ -7,195 +7,233 @@ Secondary Color (light): rgb(254, 239, 222);
 * {
   box-sizing: border-box;
 }
+
 body {
   background-color: #ffffff;
   font-family: 'Noto-sans JP', sans-serif;
-  font-size: 16px; /* Sets the font size to 16px */
-  font-weight: 300; /* Sets the font weight to 400 */
-  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  font-size: 16px;
+  /* Sets the font size to 16px */
+  font-weight: 300;
+  /* Sets the font weight to 400 */
+  line-height: 1.6;
+  /* Sets the line-height to 1.6 * the font-size */
   color: #0E0314;
 }
 
 h1, h2, h3, h4 {
   line-height: 1.4;
 }
+
 h1 {
   font-size: 1.80em;
-  font-weight: 300;
+  font-weight: 600;
   text-align: center;
 }
 
 h2 {
-  font-size: 1.50em;
-  font-weight: 500;
+  font-size: 1.60em;
+  font-weight: 300;
 }
 
 h3 {
-  font-size: 1.35em;
-  font-weight: 500;
+  font-size: 1.40em;
+  font-weight: 300;
 }
+
 h4 {
   font-size: 1.20em;
   font-weight: 500;
 }
+
 img {
   width: 100%;
 }
+
 #contact {
-  background-color: #edecfe;
   margin: 0 auto;
-  text-align:center;
+  text-align: center;
   padding-bottom: 30px;
+  border-top: 2px solid #0E0314;
 }
 a {
-  color: #82807F;
-  text-decoration: none; /* No underlining */
+  color: #4120A9;
+  text-decoration: none;
+  /* No underlining */
 }
-a:visited { /* visited link */
-  color: #82807F;
+
+a:visited {
+  /* visited link */
+  color: #4120A9;
 }
-a:active { /* selected link */
+
+a:active {
+  /* selected link */
   color: #0E0314;
 }
+
 a:hover,
 a:focus {
   color: #0E0314;
   text-decoration: underline;
 }
+
 .button {
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #240831;
-  color: #ffffff !important; /* needed to override the default link color */
+  display: inline-block;
+  background-color: #4120A9;
+  color: #ffffff !important;
+  /* needed to override the default link color */
   font-weight: 400;
   font-size: 0.85em;
   padding: 10px 15px 10px 15px;
-  border-radius: 20px;
-  border-bottom: 2px solid #240831; /* width of the border, type, color */
+  border-radius: 30px;
   transition: opacity 0.2s, background-color 0.3s;
 }
+
 .button:hover,
 .button:focus,
 .button:active {
-  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  opacity: 0.8;
+  /* Reduces the opacity of the button to 80% */
   text-decoration: none;
 }
+
 .button.contact {
-  background-color: transparent;
-  color: #0E0314 !important;
-  border: 2px solid #0E0314;
+  background-color: #ffffff;
+  color: #4120A9 !important;
+  border: 2px solid #4120A9;
   margin: auto;
+}
+.button.resume {
+  margin-top: 20px;
 }
 .button.contact:hover,
 .button.contact:focus,
 .button.contact:active {
-  background-color: #0E0314;
+  background-color: #4120A9;
   color: #ffffff !important;
   opacity: 1 !important;
 }
+
 .image.contact {
-  width: 40px; /* Defines linkedin logo */
+  width: 50px;
+  /* Defines linkedin and email logo */
 }
-.name {
-  font-weight: 700;
-  font-size: 1em;
-  color: #000000 !important;
-}
+
 .copyright {
   font-size: 0.7em;
-  }
+}
+
 /* Layout styling general*/
 .container {
-  padding: 0 15px; /* 0px top and bottom, 15 left and right */
+  padding: 0 15px;
+  /* 0px top and bottom, 15 left and right */
+}
+.logo {
+  width: 70px;
 }
 .row {
-  margin: 30px 0; /* 25px top and bottom, 0 left and right */
+  margin: 30px 0;
+  /* 30px top and bottom, 0 left and right */
 }
+
 #h1 h1 {
-  text-align: center; /* Centers text */
+  text-align: center;
 }
 header {
-  background-color: #f2f2f2;
-  padding: 20px 0 12px;
+  background-color: #ffffff;
+  padding: 5px 0 12px;
   position: fixed;
   width: 100%;
 }
-nav > ul {
+
+nav>ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-nav > ul > li > a {
+nav>ul>li>a {
   padding: 0 15px;
   font-weight: 400;
-  color: #82807F;
+  color: #0E0314 !important;
   cursor: pointer;
+  font-size: 0.85em;
+  text-transform: uppercase;
 }
-nav > ul > li > a:visited {
-color: #82807F;
+
+nav>ul>li>a:visited {
+  color: #0E0314 !important;
 }
-nav > ul > li > a:hover {
-color: #0E0314;
-text-decoration: underline;
+
+nav>ul>li>a:hover {
+  color: #4120A9 !important;
+  text-decoration: underline;
 }
-nav > ul > li > a:focus {
-color: #0E0314;
-text-decoration: underline;
+
+nav>ul>li>a:focus {
+  color: #4120A9 !important;
+  text-decoration: underline;
 }
-nav > ul > li > a:active {
-color: #0E0314;
+
+nav>ul>li>a:active {
+  color: #4120A9 !important;
 }
+
 #hero {
   padding-top: 10px;
   padding-bottom: 10px;
   display: inline-block;
-  text-align:center;
+  text-align: center;
   width: 100%;
 }
+
 main {
   padding-top: 70px;
   padding-right: 20px;
   padding-left: 20px;
 }
+
 footer {
   padding-top: 10px;
 }
+
 .center {
   text-align: center;
 }
+
 /* Layout styling about page */
-.image {
-  width: 400px; /* Sets my profile picture to 200px */
-}
 #about-section {
   max-width: 1000px;
   margin: 0 auto;
-    }
-#about-page h2 {
-  text-align: center;
-  }
-#about-section {
-  text-align: center;
-  }
+}
 .column-skills ul {
   text-align: center;
   list-style-type: none;
   margin: 0;
   padding: 0;
-    }
+}
+
 .story {
-  padding-bottom: 20px;
-    }
+  padding-top: 30px;
+  padding-bottom: 0;
+}
+
 .skills {
   padding-top: 20px;
-    }
+  padding-bottom: 20px;
+}
+#about-page .row {
+  margin: 0;
+}
+
 /* Layout styling Projects page */
 #aida-page h2 {
   text-align: center;
-  }
+}
 
 /* Layout styling Index page */
-#work .container { /* Tried to remove the padding on left and bottom of image */
+#work .container {
+  /* Tried to remove the padding on left and bottom of image */
   padding: 0;
 }
 
@@ -203,197 +241,237 @@ footer {
   display: flex;
   align-items: center;
 }
+
 /* Hamburger menu */
 .navtoggle li:not(:last-child) {
   display: none;
 }
+
 .navtoggle, .navtoggle.responsive {
   position: relative;
 }
+
 .navtoggle li .icon {
   position: absolute;
   right: 0;
   padding-right: 0;
   top: 2px;
-  font-size: 20px;
+  font-size: 30px;
 }
+
 .navtoggle.responsive nav {
   padding: 24px 0 0;
-  }
+}
+
 .navtoggle.responsive li {
   display: block;
   padding: 10px 0;
-  }
-  .navtoggle.responsive li:last-child {
-    padding: 0 0 10px;
-      }
+}
+
+.navtoggle.responsive li:last-child {
+  padding: 0 0 10px;
+}
+
 /* CSS transition image shrinks when hover - not working*/
-  .shrink {
+.shrink {
   transition: 0.3s ease;
-  }
-  .shrink:hover {
+}
+
+.shrink:hover {
   transform: scale(0.9);
-  }
-  /* CSS animation */
-    /* Animation: sun */
+}
+
+/* CSS animation */
+/* Animation: sun */
 @keyframes circle-moves {
- from {
-   transform: rotateZ(0deg);
-   }
-   to {
-     transform: rotateZ(360deg);
-     }
-     }
-  #rays {
-    animation: circle-moves 20s infinite linear;
-    transform-origin: center;
-    transform-box: fill-box;
-    }
+  from {
+    transform: rotateZ(0deg);
+  }
+
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+#rays {
+  animation: circle-moves 20s infinite linear;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
 @keyframes sun-shrinks {
   from {
-      transform: scale(1);
-}
+    transform: scale(1);
+  }
+
   to {
     transform: scale(0.4);
   }
-  }
-  #center-circle {
+}
+
+#center-circle {
   animation: sun-shrinks 8s infinite linear;
   transform-origin: center;
   transform-box: fill-box;
-    }
-    /* Animation: mountain */
+}
+
+/* Animation: mountain */
 @keyframes sun-move {
-      from {transform: translateY(0px);}
-      to {transform: translateY(80px);}
-      }
+  from {
+    transform: translateY(0px);
+  }
+
+  to {
+    transform: translateY(80px);
+  }
+}
+
 #sunmountain {
   animation: sun-move 8s infinite alternate linear;
-    }
+}
 
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
-header {
-text-align: unset;
-padding: 20px 0 12px;
-}
-h1 {
-  font-size: 2.25em;
+  header {
+    text-align: unset;
+    padding: 20px 0 12px;
   }
-nav {
-  width: auto;
-  float:right;
-  margin-top: 4px;
-}
-nav > ul {
-  margin: 1em 0;
-  }
-nav > ul > li {
-  display: inline-block; /* makes nav items side by side */
-}
-main {
-  padding-top: 99px;
-}
-body {
-  font-size: 18px;
-}
-#hero span {
-  display: block;
-}
-#hero {
-  padding-top: 60px;
-  padding-bottom: 50px;
-  }
-.name {
+
+  h1 {
+    font-size: 3.0em;
     font-weight: 700;
-    font-size: 1.50em;
-    }
-.col-md-6 {
-  width: 50%;
-}
-.col-md-4 {
-  width: 33.33%;
   }
-[class*="col-"] {
-  float: left;
-  padding-right: 10px;
-  padding-left: 10px;
-}
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-#about-page h3 {
-  margin-top: 0;
-}
-.case {
-  display: flex;
-  align-items: center;
-}
-.navtoggle li:not(:last-child) { /* makes nav items visible on not-mobile screns */
-  display: inline-block;
-}
-.navtoggle li:last-child { /* hides hamburger menu */
-  display: none;
-}
-/* Animation: Top and Bottom borders go out in nav */
-.navigation a:before,
-.navigation a:after
-{
-  position: absolute;
-  left: 0px;
-  width: 100%;
-  height: 2px;
-  background: #0E0314;
-  content: "";
-  opacity: 0;
-  transition: all 0.3s;
-}
+  h2 {
+    font-size: 2.25em;
+    font-weight: 500;
+  }
+  h3 {
+    font-size: 1.75em;
+    font-weight: 500;
+  }
+  h4 {
+    font-size: 1.50em;
+    font-weight: 300;
+  }
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
 
-.navigation a:before
-{
-top: 0px;
-transform: translateY(10px);
-}
+  nav>ul {
+    margin: 1em 0;
+  }
 
-.navigation a:after
-{
-bottom: 0px;
-transform: translateY(-10px);
-}
+  nav>ul>li {
+    display: inline-block;
+    /* makes nav items side by side */
+  }
 
-.navigation a:hover:before,
-.navigation a:hover:after
-{
-opacity: 1;
-transform: translateY(0px);
-}
+  main {
+    padding-top: 99px;
+  }
 
+  body {
+    font-size: 18px;
+  }
 
-}/* end of medium device */
+  #hero span {
+    display: block;
+  }
+
+  #hero {
+    padding-top: 60px;
+    padding-bottom: 50px;
+  }
+
+  .image.profile {
+    width: 350px;
+  }
+#about-page main {
+  padding-top: 150px;
+    }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-5 {
+    width: 41.66%;
+  }
+  .col-md-7 {
+    width: 58.33%;
+  }
+  .col-md-4 {
+    width: 33.33%;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  #about-page h3 {
+    margin-top: 0;
+  }
+
+  #index h2 {
+    font-size: 1.50em;
+    font-weight: 300;
+  }
+  .case {
+    display: flex;
+    align-items: center;
+  }
+
+  .button {
+    font-size: 0.95em;
+    padding: 15px 20px 15px 20px;
+  }
+
+  .navtoggle li:not(:last-child) {
+    /* makes nav items visible on not-mobile screns */
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;     /* hides hamburger menu */
+  }
+
+/* end of medium device */
 /* ==============================
 
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
-.col-lg-4 {
-  width: 33.33%;
+  .col-lg-4 {
+    width: 33.33%;
   }
-.col-lg-5 {
-  width: 41.66%;
+
+  .col-lg-5 {
+    width: 41.66%;
+  }
+
+  .col-lg-6 {
+    width: 50%;
+  }
+
+  .col-lg-7 {
+    width: 58.33%;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
-.col-lg-6 {
-  width: 50%;
-}
-.col-lg-7 {
-  width: 58.33%;
-}
-.container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right:auto;
-}
-}/* end of large device */
+
+/* end of large device */

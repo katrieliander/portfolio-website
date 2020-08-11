@@ -55,6 +55,7 @@ img {
   padding-bottom: 30px;
   border-top: 2px solid #0E0314;
 }
+
 a {
   color: #4120A9;
   text-decoration: none;
@@ -103,9 +104,11 @@ a:focus {
   border: 2px solid #4120A9;
   margin: auto;
 }
+
 .button.resume {
   margin-top: 20px;
 }
+
 .button.contact:hover,
 .button.contact:focus,
 .button.contact:active {
@@ -128,9 +131,11 @@ a:focus {
   padding: 0 15px;
   /* 0px top and bottom, 15 left and right */
 }
+
 .logo {
   width: 70px;
 }
+
 .row {
   margin: 30px 0;
   /* 30px top and bottom, 0 left and right */
@@ -139,6 +144,7 @@ a:focus {
 #h1 h1 {
   text-align: center;
 }
+
 header {
   background-color: #ffffff;
   padding: 5px 0 12px;
@@ -206,6 +212,7 @@ footer {
   max-width: 1000px;
   margin: 0 auto;
 }
+
 .column-skills ul {
   text-align: center;
   list-style-type: none;
@@ -222,6 +229,7 @@ footer {
   padding-top: 20px;
   padding-bottom: 20px;
 }
+
 #about-page .row {
   margin: 0;
 }
@@ -272,7 +280,7 @@ footer {
   padding: 0 0 10px;
 }
 
-/* CSS transition image shrinks when hover - not working*/
+/* CSS transition image shrinks when hover*/
 .shrink {
   transition: 0.3s ease;
 }
@@ -343,18 +351,22 @@ Medium devices (640px and larger)
     font-size: 3.0em;
     font-weight: 700;
   }
+
   h2 {
     font-size: 2.25em;
     font-weight: 500;
   }
+
   h3 {
     font-size: 1.75em;
     font-weight: 500;
   }
+
   h4 {
     font-size: 1.50em;
     font-weight: 300;
   }
+
   nav {
     width: auto;
     float: right;
@@ -381,9 +393,10 @@ Medium devices (640px and larger)
   #hero span {
     display: block;
   }
+
   .highlights {
     font-size: 32px;
-    }
+  }
 
   #hero {
     padding-top: 60px;
@@ -393,18 +406,23 @@ Medium devices (640px and larger)
   .image.profile {
     width: 350px;
   }
-#about-page main {
-  padding-top: 150px;
-    }
+
+  #about-page main {
+    padding-top: 150px;
+  }
+
   .col-md-6 {
     width: 50%;
   }
+
   .col-md-5 {
     width: 41.66%;
   }
+
   .col-md-7 {
     width: 58.33%;
   }
+
   .col-md-4 {
     width: 33.33%;
   }
@@ -422,13 +440,14 @@ Medium devices (640px and larger)
   }
 
   #about-page h3 {
-    margin-top: 0;
+    margin: 0;
   }
 
   #index h2 {
-    font-size: 1.50em;
+    font-size: 1.5em;
     font-weight: 300;
   }
+
   .case {
     display: flex;
     align-items: center;
@@ -445,37 +464,39 @@ Medium devices (640px and larger)
   }
 
   .navtoggle li:last-child {
-    display: none;     /* hides hamburger menu */
+    display: none;
+    /* hides hamburger menu */
   }
 
-/* end of medium device */
-/* ==============================
+
+  /* end of medium device */
+  /* ==============================
 
 Large devices (1024px or larger)
 ================================= */
-@media only screen and (min-width: 1024px) {
-  .col-lg-4 {
-    width: 33.33%;
-  }
+  @media only screen and (min-width: 1024px) {
+    .col-lg-4 {
+      width: 33.33%;
+    }
 
-  .col-lg-5 {
-    width: 41.66%;
-  }
+    .col-lg-5 {
+      width: 41.66%;
+    }
 
-  .col-lg-6 {
-    width: 50%;
-  }
+    .col-lg-6 {
+      width: 50%;
+    }
 
-  .col-lg-7 {
-    width: 58.33%;
-  }
+    .col-lg-7 {
+      width: 58.33%;
+    }
 
-  .container {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
+    .container {
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
-}
 }
 
 /* end of large device */

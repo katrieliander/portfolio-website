@@ -236,6 +236,9 @@ footer {
 #about-page .row {
   margin: 0;
 }
+#about-page h2 {
+  margin: 10px;
+}
 
 /* Layout styling Projects page */
 #aida-page h2 {
@@ -454,7 +457,7 @@ Medium devices (640px and larger)
     font-weight: 300;
   }
   .column-testimonials {
-    padding: 30px;
+    padding: 10px 30px 30px;
     font-style: italic;
     line-height: 1.8;
   }

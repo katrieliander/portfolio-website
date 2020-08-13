@@ -136,11 +136,12 @@ a:focus {
 }
 
 .logo {
-  width: 70px;
+  width: 60px;
 }
 
 .row {
   margin: 30px 0;
+  padding: 10px;
   /* 30px top and bottom, 0 left and right */
 }
 
@@ -255,6 +256,18 @@ footer {
   display: flex;
   align-items: center;
 }
+.section {
+  background-color:#E5D9EF;
+  padding: 10px;
+  }
+  .full-width {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  }
 
 /* Hamburger menu */
 .navtoggle li:not(:last-child) {
@@ -356,6 +369,7 @@ Medium devices (640px and larger)
   h1 {
     font-size: 3.0em;
     font-weight: 700;
+    margin-bottom: 0;
   }
 
   h2 {
@@ -370,7 +384,7 @@ Medium devices (640px and larger)
 
   h4 {
     font-size: 1.50em;
-    font-weight: 300;
+    font-weight: 500;
   }
 
   nav {
@@ -402,13 +416,13 @@ Medium devices (640px and larger)
 
   .highlights {
     font-size: 32px;
+    padding: 0;
   }
 
   #hero {
     padding-top: 60px;
     padding-bottom: 50px;
   }
-
   .image.profile {
     width: 350px;
   }
@@ -427,6 +441,9 @@ Medium devices (640px and larger)
 
   .col-md-7 {
     width: 58.33%;
+  }
+  .col-md-8 {
+    width: 66.66%;
   }
 
   .col-md-4 {
@@ -459,7 +476,7 @@ Medium devices (640px and larger)
   .column-testimonials {
     padding: 10px 30px 30px;
     font-style: italic;
-    line-height: 1.8;
+    line-height: 1.9;
   }
   .case {
     display: flex;
@@ -506,12 +523,23 @@ Large devices (1024px or larger)
     .col-lg-2 {
       width: 16.66%;
     }
-
+    .col-lg-8 {
+      width: 66.66%;
+    }
     .container {
       max-width: 1200px;
       margin-left: auto;
       margin-right: auto;
     }
+    .image-container {
+      max-width: 900px;
+      margin: auto;
+        }
+
+    .narrow {
+      max-width: 800px;
+      margin: auto;
+      }
   }
 }
 

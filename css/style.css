@@ -140,8 +140,8 @@ a:focus {
 }
 
 .row {
-  margin: 30px 0;
-  padding: 10px;
+  margin: 10px 0;
+  padding: 10px 0;
   /* 30px top and bottom, 0 left and right */
 }
 
@@ -236,6 +236,7 @@ footer {
 
 #about-page .row {
   margin: 0;
+  padding: 0 10px 0;
 }
 #about-page h2 {
   margin: 10px;
@@ -267,6 +268,11 @@ footer {
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
+  }
+
+  .testimonials {
+    font-style: italic;
+    line-height: 1.9;
   }
 /* Hamburger menu */
 .navtoggle li:not(:last-child) {
@@ -379,6 +385,8 @@ Medium devices (640px and larger)
   h3 {
     font-size: 1.75em;
     font-weight: 500;
+    margin: 0;
+    padding-top: 10px;
   }
 
   h4 {
@@ -409,6 +417,9 @@ Medium devices (640px and larger)
     font-size: 18px;
   }
 
+.margin-bottom {
+  margin-bottom: 20px;
+}
   #hero span {
     display: block;
   }
@@ -429,7 +440,6 @@ Medium devices (640px and larger)
   #about-page main {
     padding-top: 150px;
   }
-
   .col-md-6 {
     width: 50%;
   }
@@ -472,21 +482,20 @@ Medium devices (640px and larger)
     font-size: 1.5em;
     font-weight: 300;
   }
-  .column-testimonials {
-    padding: 10px 30px 30px;
-    font-style: italic;
-    line-height: 1.9;
-  }
+
   .case {
     display: flex;
     align-items: center;
+    padding: 0;
   }
 
   .button {
     font-size: 0.95em;
     padding: 15px 20px 15px 20px;
   }
-
+  .row {
+    margin: 0;
+}
   .navtoggle li:not(:last-child) {
     /* makes nav items visible on not-mobile screns */
     display: inline-block;
@@ -533,6 +542,14 @@ Large devices (1024px or larger)
     .image-container {
       max-width: 900px;
       margin: auto;
+        }
+    .row {
+    padding: 20px 0;
+          /* 20px top and bottom, 0 left and right */
+        }
+  #about-page [class*="col-"] {
+  padding-right: 25px;
+  padding-left: 25px;
         }
 
     .narrow {

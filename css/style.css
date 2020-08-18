@@ -58,7 +58,10 @@ img {
   padding-bottom: 30px;
   border-top: 2px solid #0E0314;
 }
-
+.lila {
+  color: #4120A9;
+  font-weight: bolder;
+  }
 a {
   color: #4120A9;
   text-decoration: none;

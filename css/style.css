@@ -20,7 +20,14 @@ body {
   color: #0E0314;
 }
 
-h1, h2, h3, h4 {
+h1 {
+  line-height: 1.2;
+}
+#aida h1 {
+  line-height: 2.5;
+}
+
+h2, h3, h4 {
   line-height: 1.4;
 }
 
@@ -44,10 +51,7 @@ h4 {
   font-size: 1.20em;
   font-weight: 500;
 }
-.no-italics {
-    font-style: normal;
-    font-weight: 500;
-}
+
 img {
   width: 100%;
 }
@@ -58,10 +62,12 @@ img {
   padding-bottom: 30px;
   border-top: 2px solid #0E0314;
 }
+
 .lila {
   color: #4120A9;
   font-weight: bolder;
-  }
+}
+
 a {
   color: #4120A9;
   text-decoration: none;
@@ -139,13 +145,13 @@ a:focus {
 }
 
 .logo {
-  width: 60px;
+  width: 90px;
 }
 
 .row {
   margin: 10px 0;
   padding: 10px 0;
-  /* 30px top and bottom, 0 left and right */
+  /* 10px top and bottom, 0 left and right */
 }
 
 #h1 h1 {
@@ -213,6 +219,29 @@ footer {
 .center {
   text-align: center;
 }
+.section {
+  padding: 5px;
+  text-align: center;
+}
+
+.case-header h1 {
+  color: #ffffff;
+  text-align: left;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.white-text {
+  color: #ffffff;
+}
+.header-h3 {
+  color: #ffffff;
+  text-align: left;
+}
+.grey-background {
+background-color: #E0DFDF;
+}
+
 
 /* Layout styling about page */
 #about-section {
@@ -241,42 +270,57 @@ footer {
   margin: 0;
   padding: 0 10px 0;
 }
+
 #about-page h2 {
   margin: 10px;
 }
 
-/* Layout styling Projects page */
-#aida-page h2 {
-  text-align: center;
+.no-italics {
+  font-style: normal;
+  font-weight: 500;
+}
+.testimonials {
+  font-style: italic;
+  line-height: 1.9;
 }
 
+/* Layout styling Aida page */
+#aida .section {
+  background-color: #E5D9EF;
+}
+/* Layout styling slavefreetrade */
+#slavefreetrade .case-header {
+  background-color: #2CAAE2;
+}
+
+#slavefreetrade .section {
+  background-color: #2CAAE2;
+}
+/* Layout styling portfolio*/
+#portfolio .case-header {
+  background-color: #4120A9;
+}
+#portfolio .section {
+  background-color: #4120A9;
+}
 /* Layout styling Index page */
-#work .container {
-  /* Tried to remove the padding on left and bottom of image */
-  padding: 0;
-}
-
 .flexbox {
   display: flex;
   align-items: center;
 }
-.section {
-  background-color:#E5D9EF;
-  padding: 10px;
-  }
-  .full-width {
+
+.full-width {
   width: 100vw;
   position: relative;
   left: 50%;
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
-  }
+  padding-right: 50px;
+  padding-left: 50px;
+}
 
-  .testimonials {
-    font-style: italic;
-    line-height: 1.9;
-  }
+
 /* Hamburger menu */
 .navtoggle li:not(:last-child) {
   display: none;
@@ -375,13 +419,13 @@ Medium devices (640px and larger)
   }
 
   h1 {
-    font-size: 3.0em;
+    font-size: 3.20em;
     font-weight: 700;
     margin-bottom: 0;
   }
 
   h2 {
-    font-size: 2.25em;
+    font-size: 2.75em;
     font-weight: 500;
   }
 
@@ -393,8 +437,9 @@ Medium devices (640px and larger)
   }
 
   h4 {
-    font-size: 1.50em;
+    font-size: 1.20em;
     font-weight: 500;
+    margin-bottom: 0;
   }
 
   nav {
@@ -420,9 +465,14 @@ Medium devices (640px and larger)
     font-size: 18px;
   }
 
-.margin-bottom {
-  margin-bottom: 20px;
-}
+  .sketch {
+    width: 400px;
+  }
+
+  .margin-bottom {
+    margin-bottom: 20px;
+  }
+
   #hero span {
     display: block;
   }
@@ -434,8 +484,9 @@ Medium devices (640px and larger)
 
   #hero {
     padding-top: 60px;
-    padding-bottom: 50px;
+    padding-bottom: 60px;
   }
+
   .image.profile {
     width: 350px;
   }
@@ -443,6 +494,7 @@ Medium devices (640px and larger)
   #about-page main {
     padding-top: 150px;
   }
+
   .col-md-6 {
     width: 50%;
   }
@@ -454,6 +506,7 @@ Medium devices (640px and larger)
   .col-md-7 {
     width: 58.33%;
   }
+
   .col-md-8 {
     width: 66.66%;
   }
@@ -461,6 +514,7 @@ Medium devices (640px and larger)
   .col-md-4 {
     width: 33.33%;
   }
+
   .col-md-2 {
     width: 16.66%;
   }
@@ -481,12 +535,17 @@ Medium devices (640px and larger)
     margin: 0;
   }
 
+  #about-page h2 {
+    font-size: 2.25em;
+    font-weight: 500;
+  }
+
   #index h2 {
     font-size: 1.5em;
     font-weight: 300;
   }
 
-  .case {
+  .flex {
     display: flex;
     align-items: center;
     padding: 0;
@@ -496,9 +555,20 @@ Medium devices (640px and larger)
     font-size: 0.95em;
     padding: 15px 20px 15px 20px;
   }
+
   .row {
-    margin: 0;
-}
+    margin-top: 0;
+  }
+
+  .case-header {
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
+  .row.header {
+    width: 90%;
+    margin: auto;
+    }
+
   .navtoggle li:not(:last-child) {
     /* makes nav items visible on not-mobile screns */
     display: inline-block;
@@ -508,7 +578,6 @@ Medium devices (640px and larger)
     display: none;
     /* hides hamburger menu */
   }
-
 
   /* end of medium device */
   /* ==============================
@@ -531,34 +600,50 @@ Large devices (1024px or larger)
     .col-lg-7 {
       width: 58.33%;
     }
+
     .col-lg-2 {
       width: 16.66%;
     }
+
     .col-lg-8 {
       width: 66.66%;
     }
+
     .container {
       max-width: 1200px;
       margin-left: auto;
       margin-right: auto;
     }
+
     .image-container {
       max-width: 900px;
       margin: auto;
-        }
+    }
+
     .row {
-    padding: 20px 0;
-          /* 20px top and bottom, 0 left and right */
-        }
-  #about-page [class*="col-"] {
-  padding-right: 25px;
-  padding-left: 25px;
-        }
+      padding: 10px 0;
+      /* 20px top and bottom, 0 left and right */
+    }
+
+    #about-page [class*="col-"] {
+      padding-right: 25px;
+      padding-left: 25px;
+    }
+
+    .case-name {
+      font-size: 1.35em;
+      font-weight: 700;
+    }
 
     .narrow {
       max-width: 800px;
       margin: auto;
-      }
+    }
+
+    .narrow-index {
+      max-width: 1000px;
+      margin: auto;
+    }
   }
 }
 

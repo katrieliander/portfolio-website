@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Katri Eliander">
+  <title>Building my own UX Design portfolio</title>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script defer src="javascript/all.js"></script>
+</head>
+<body id="portfolio">
+  <header id="myHeader">
+    <div class="container">
+      <div class="navtoggle" id="myNavtoggle">
+        <a href="index.html"><img src="img/logo@2x.jpg" class="logo" alt="Katri Eliander"></a>
+        <nav>
+          <ul class="navigation">
+            <li><a href="index.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+          </ul>
+        </nav>
+      </div><!-- end container div-->
+    </div><!-- end navtoggle div-->
+  </header>
+  <main id="Main">
+    <div class="container">
+      <div class="full-width case-header">
+        <div class="row header">
+          <!-- open row-->
+          <div class="col-lg-5">
+            <!-- open first column-->
+            <h1>Building this portfolio website from scratch</h1>
+            <h3 class="header-h3">HTML, CSS and JavaScript</h3>
+          </div><!-- end first column-->
+          <div class="col-lg-7">
+            <picture>
+              <source srcset="img/portfolio/header-website@2.jpg" media="(max-width:767px)">
+              <img src="img/portfolio/header-website.jpg" alt="Header image mockups"></picture>
+          </div><!-- end image-->
+        </div><!-- end row-->
+      </div><!-- end header block-->
+      <div class="narrow">
+        <!-- open intro text block-->
+        <p>As a UX Designer my main responsibility is to conduct user research, understand the user’s challenge to a certain issue, ideate solutions and translate these solutions into concrete wireframes and prototypes. But what happens after that?
+          How are these designs brought to life?</p>
+        <p>To get a better understanding of what actually happens after the UX and UI Designers job is done - and the work is handed over to a developer in most cases - I decided to take a frontend course to learn and practice HTML, CSS and
+          Javascript. During the course I built my own portfolio website. As a UX Designer, my portfolio is one of the most important platforms for showcasing my skills to potential recruiters, other designers or anyone interested in my work. </p>
+        <h3>Goal</h3>
+        <p>My goal was to enhance my frontend skills to become more confident with cooperating with developers in the future and familiarize myself with industry-standard systems. And of course, build an attractive looking website.</p>
+        <h3>Tools</h3>
+        <p>Atom, Codepen, GitHub, Adobe XD, W3C Validation Service</p>
+      </div><!-- end intro text block-->
+      <div>
+        <div class="row flex">
+          <!-- open row-->
+          <div class="col-lg-6">
+            <!-- open text column-->
+            <h3>The challenge</h3>
+            <p>As I started the course I had experience working with HTML but CSS and Javascript were quite new to me. During the course I learnt step by step about containers, writing and pushing commits in GitHub, CSS layouts and styling,
+              mobile-first design, Javascript functions and libraries.</p>
+            <p>There were definitely a few times during the course that I got frustrated as the code wasn’t behaving like I expected it to but with some patience and the help of my mentor and some very good Youtube videos (which I'm very thankful
+              for) I overcame these challenges and managed to build a website that I’m proud of.</p>
+          </div><!-- end text column-->
+          <div class="col-lg-6">
+            <!-- open image column-->
+            <picture>
+              <source srcset="img/portfolio/challenge.jpg" media="(max-width:767px)">
+              <img src="img/portfolio/challenge.jpg" alt="Laptop screen with code"></picture>
+          </div><!-- end image column-->
+        </div><!-- end row-->
+        <div>
+          <!-- open second block-->
+          <div class="section full-width margin-bottom white-text">
+            <!-- open header block-->
+            <h2>Design & development process</h2>
+          </div><!-- end header block-->
+          <div class="narrow">
+            <h3>Research & inspiration</h3>
+            <p>I used my current portfolio site on Uxfol.io as an example as I Iiked the template and layout that I have here. I also did a lot of research on other UX Designers portfolios to get some inspiration. I noticed that a common pattern was
+              to briefly present the case studies already on the main page. I liked this approach as then the user can immediately see what the Designer has done without having to click themselves to a separate page. </p>
+            I wanted the design to be clean, simple yet show some personality. I decided to go for a minimalistic color palette with a bright purple as an interaction color in the buttons and text links.</p>
+            <h3>Information architecture</h3>
+            <p>The important section/pages that I identified for my website and that formed the IA were:</p>
+            <ul>
+              <li>Main landing pages</li>
+              <li>Case studies</li>
+              <li>Contact information</li>
+              <li>About me</li>
+              <li>Resume</li>
+            </ul>
+          </div>
+          <div class="row flex">
+            <!-- open row-->
+            <div class="col-lg-7">
+              <h3>First wireframes</h3>
+              <p>On the right are few of the first sketches I made of the main page and the about page for desktop and mobile. I wanted the main page to have my name and a short 1-2 sentence introduction about me. After this the case studies would be
+                presented with an image and text. On the desktop these columns are next to each other and on mobile under each other. </p>
+              <p>Initially I planned that the About page would just have my photo and text. Later I decided to add also a list of my skills and testimonials.</p>
+            </div>
+            <div class="col-lg-5">
+              <picture>
+                <source srcset="img/portfolio/sketches.jpg" media="(max-width:767px)">
+                <img src="img/portfolio/sketches.jpg" alt="moodboard"></picture>
+            </div>
+          </div>
+          <div class="row flex">
+            <!-- open row-->
+            <div class="col-lg-6">
+              <!-- open image column-->
+              <picture>
+                <source srcset="img/portfolio/code@2.jpg" media="(max-width:767px)">
+                <img src="img/portfolio/code.jpg" alt="moodboard"></picture>
+            </div><!-- end image column-->
+            <div class="col-lg-6">
+              <!-- open text column-->
+              <h3>Basic site and page structure with HTML</h3>
+              <p>The structure and IA of the website stayed the same throughout the development process, however, the layout and styling changed several times. I started creating the pages with the help of HTML, making sure that I used division tags
+                often to make it easier later to customize different sections.</p>
+              <p>I decided to have the contact information in the footer so that it's easily reachable wherever the user is on the site. I linked my CV on the About page.</p>
+            </div><!-- end text column-->
+          </div><!-- end row-->
+          <div class="row flex">
+            <div class="col-lg-6">
+              <h3>Defining style and layout with CSS</h3>
+              <p>When I had the HTML pages and elements in place, it was time to incorporate some styling and layout with the help of a CSS stylesheet. I decided to go with a fixed header that would always be visible for the user when scrolling. I
+                had from the very start a mobile-first approach in my design and development process and I used media queries to define how content should be displayed and elements styled at medium and large viewports. </p>
+              <p>This project helped me understand much better how to do and build a responsive website. Knowing the role of columns and rows in different viewports (and how to define them) was a valuable learning. </p>
+              <h4>Adding JavaScript</h4>
+              <p>For the mobile version I wanted a hamburger menu which I was able to add with JavaScript. I also practiced doing some CSS animations and transitions. I built two simple CSS animations with SVG icons and for the buttons on my site I
+                added transitions for the hover state. </p>
+            </div>
+            <div class="col-lg-6">
+              <picture>
+                <source srcset="img/portfolio/css@2.jpg" media="(max-width:767px)">
+                <img src="img/portfolio/css.jpg" alt="design mobile and desktop"></picture>
+            </div>
+          </div>
+          <div class="section full-width margin-bottom white-text">
+            <!-- open header block-->
+            <h2>User testing</h2>
+          </div><!-- end header block-->
+          <div class="narrow">
+            <p>An important step in any design or development project is user testing. I wanted to test my website with 5 users to identify possible usability issues and get feedback on my portfolio site.</p>
+            <h4>My test objectives were:</h4>
+            <ol>
+              <li>Observe how effortlessly users are able to navigate the website - do they immediately know where to go for what information?</li>
+              <br>
+              <li>Find out any possible usability issues.</li>
+              <br>
+              <li>See what kind of impression the website and the copy gives of me as a Designer. Does the website showcase my skills and me as a Designer clearly?</li>
+            </ol>
+            <p>I used <b>four scenario tasks</b> and four <b>open ended questions</b> to conduct my user studies.</p>
+          </div>
+          <div class="row flex">
+            <div class="col-lg-6">
+              <h3>Improvements after user testing</h3>
+              <p>The usability tests didn't reveal any usability issues. All participants completed the tasks easily and quickly. However, the users had some other valuable feedback which made me do a few improvements such as:</p>
+              <ul>
+                <li>I added Testimonials to the About page</li>
+                <li>I rewrote much of the copy to make sure I highlighted the value that I can bring to employers</li>
+                <li>I shortened the "Aida" case study as users found it a bit too long</li>
+                <li>I shortened the intro text on the main page</li>
+                </ul>
+                </div>
+                <div class="col-lg-6">
+                  <picture>
+                    <source srcset="img/portfolio/user-test@2.jpg" media="(max-width:767px)">
+                    <img src="img/portfolio/user-test.jpg" alt="user test results"></picture>
+                    </div>
+                    </div>
+                    <div class="narrow">
+<h3>Code quality, accessibility & cross-browser testing</h3>
+<p>The last thing I did before the launch of the website was to quality check my code and test it across browsers and devices. I used the linters <b>W3C Validator, linter-stylelint and Standard Javascript style</b> to check the code quality on my HTML, CSS and JavaScript files. I did some minor fixes in my code to remove identified errors or warnings. I also used atom-beautify to help format my code.</p>
+<p>The <b>accessibility</b> of my UI elements such as buttons and text links I checked with the color checker and they both passed the <b>AAA compliant</b>.</p>
+<p>Lastly I did a quality assurance test in the form of cross-browser testing. I found mainly some minor spacing issues that I fixed.</p>
+</div>
+<div class="section full-width margin-bottom white-text">
+            <!-- open header block-->
+            <h2>Final thoughts and learnings</h2>
+          </div>
+          <div class="narrow">
+            <p>After a steep learning curve in frontend development, I am finally ready and live with my website. I had some challenges on the way (especially with Javascript and I still have much to learn there) but I'm happy with the website I managed to build. </p>
+            <p>I can say that I have a completely new understanding of the relationship between design and development, and I feel much more confident to talk to developers about my designs after the course. I can also in a whole new way take into consideration the work of the developers when I’m making my designs. </p>
+            <p>As a UX Designer my aim is not to start writing code myself and building websites but I do find that it is extremely important to be able to speak the same language as developers and understand what restrictions and possibilities there are when it comes to translating wireframes to actual products.</p>
+          </div>
+          <div class="center">
+            <!-- open final notes block-->
+            <p class="highlights"> Thank you for reviewing my work!</p>
+          </div><!-- end final notes block-->
+        </div><!-- end main-->
+      </div>
+  </main>
+  <footer id="contact">
+    <div class="container">
+      <!-- open whole orange block-->
+      <div>
+        <!-- open yellow container-->
+        <h4>Get in touch</h4>
+        <p><span style="font-size: 85%">Please don't hesitate to contact me for work opportunities or just a chat!</span></p>
+        <div>
+          <a href="https://www.linkedin.com/in/katri-eliander-283b1b88/"><img src="img/linkedin.png" alt="linkedin" class="image contact"></a>
+          <a href="mailto:katrieliander@gmail.com"><img src="img/email.png" alt="email" class="image contact"></a>
+        </div>
+        <div class="copyright">
+          <p>Copyright Katri Eliander 2020</p>
+        </div>
+      </div><!-- end yellow container-->
+    </div><!-- end whole orange block-->
+  </footer>
+  <script src="https://code.jquery.com/jquery-migrate-3.3.1.min.js" integrity="sha256-APllMc0V4lf/Rb5Cz4idWUCYlBDG3b0EcN1Ushd3hpE=" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>

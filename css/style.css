@@ -206,7 +206,6 @@ nav>ul>li>a:active {
   padding-top: 10px;
   padding-bottom: 10px;
   display: inline-block;
-  text-align: center;
   width: 100%;
 }
 
@@ -476,9 +475,6 @@ Medium devices (640px and larger)
   .margin-bottom {
     margin-bottom: 20px;
   }
-
-
-
   .highlights {
     font-size: 32px;
     padding: 0;
@@ -647,7 +643,7 @@ Large devices (1024px or larger)
     }
 
     .narrow-index {
-      max-width: 1000px;
+      max-width: 1100px;
       margin: auto;
     }
   }

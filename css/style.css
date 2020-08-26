@@ -67,6 +67,9 @@ img {
   color: #4120A9;
   font-weight: bolder;
 }
+.blue {
+  color: #4A44F2;
+  }
 
 a {
   color: #4120A9;
@@ -474,9 +477,7 @@ Medium devices (640px and larger)
     margin-bottom: 20px;
   }
 
-  #hero span {
-    display: block;
-  }
+
 
   .highlights {
     font-size: 32px;

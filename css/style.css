@@ -56,6 +56,11 @@ img {
   width: 100%;
 }
 
+.highlight {
+  background: linear-gradient(180deg,rgba(255,255,255,0) 60%, #30FC9E 50%);
+
+}
+
 #contact {
   margin: 0 auto;
   text-align: center;
@@ -63,23 +68,20 @@ img {
   border-top: 2px solid #0E0314;
 }
 
-.lila {
-  color: #4120A9;
-  font-weight: bolder;
-}
 .blue {
   color: #4A44F2;
-  }
+  font-weight: bolder;
+}
 
 a {
-  color: #4120A9;
+  color: #4A44F2;
   text-decoration: none;
   /* No underlining */
 }
 
 a:visited {
   /* visited link */
-  color: #4120A9;
+  color: #4A44F2;
 }
 
 a:active {
@@ -95,12 +97,12 @@ a:focus {
 
 .button {
   display: inline-block;
-  background-color: #4120A9;
+  background-color: #4A44F2;
   color: #ffffff !important;
   /* needed to override the default link color */
-  font-weight: 400;
+  font-weight: 500;
   font-size: 0.85em;
-  padding: 10px 15px 10px 15px;
+  padding: 10px 10px 10px 10px;
   border-radius: 30px;
   transition: opacity 0.2s, background-color 0.3s;
 }
@@ -112,25 +114,9 @@ a:focus {
   /* Reduces the opacity of the button to 80% */
   text-decoration: none;
 }
-
-.button.contact {
-  background-color: #ffffff;
-  color: #4120A9 !important;
-  border: 2px solid #4120A9;
-  margin: auto;
-}
-
-.button.resume {
-  margin-top: 20px;
-}
-
-.button.contact:hover,
-.button.contact:focus,
-.button.contact:active {
-  background-color: #4120A9;
-  color: #ffffff !important;
-  opacity: 1 !important;
-}
+#aida .button {
+  background-color: #7B3Fb0;
+  }
 
 .image.contact {
   width: 50px;
@@ -148,7 +134,7 @@ a:focus {
 }
 
 .logo {
-  width: 90px;
+  width: 70px;
 }
 
 .row {
@@ -189,23 +175,24 @@ nav>ul>li>a:visited {
 }
 
 nav>ul>li>a:hover {
-  color: #4120A9 !important;
+  color: #4A44F2 !important;
   text-decoration: underline;
 }
 
 nav>ul>li>a:focus {
-  color: #4120A9 !important;
+  color: #4A44F2 !important;
   text-decoration: underline;
 }
 
 nav>ul>li>a:active {
-  color: #4120A9 !important;
+  color: #4A44F2 !important;
 }
 
 #hero {
   padding-top: 10px;
   padding-bottom: 10px;
   display: inline-block;
+  text-align: center;
   width: 100%;
 }
 
@@ -291,6 +278,14 @@ background-color: #E0DFDF;
 #aida .section {
   background-color: #E5D9EF;
 }
+#aida h3 {
+  color: #7B3FB0;
+  }
+
+#aida .case-header {
+background-color: #6AC1AC
+}
+
 /* Layout styling slavefreetrade */
 #slavefreetrade .case-header {
   background-color: #2CAAE2;
@@ -472,9 +467,7 @@ Medium devices (640px and larger)
     width: 400px;
   }
 
-  .margin-bottom {
-    margin-bottom: 20px;
-  }
+
   .highlights {
     font-size: 32px;
     padding: 0;
@@ -628,8 +621,8 @@ Large devices (1024px or larger)
     }
 
     #about-page [class*="col-"] {
-      padding-right: 25px;
-      padding-left: 25px;
+      padding-right: 35px;
+      padding-left: 35px;
     }
 
     .case-name {
@@ -643,8 +636,11 @@ Large devices (1024px or larger)
     }
 
     .narrow-index {
-      max-width: 1100px;
+      max-width: 1000px;
       margin: auto;
+    }
+    .margin-bottom {
+      margin-bottom: 30px;
     }
   }
 }

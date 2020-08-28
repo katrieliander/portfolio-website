@@ -285,6 +285,12 @@ background-color: #E0DFDF;
 #aida .case-header {
 background-color: #6AC1AC
 }
+.aida-lila-background {
+background-color: #E5D9EF;
+}
+.aida-green-background {
+background-color: #E1F3EE;
+}
 
 /* Layout styling slavefreetrade */
 #slavefreetrade .case-header {

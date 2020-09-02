@@ -208,6 +208,7 @@ footer {
 
 .center {
   text-align: center;
+  display: block;
 }
 .section {
   padding: 5px;
@@ -291,6 +292,14 @@ background-color: #E5D9EF;
 }
 .aida-green-background {
 background-color: #E1F3EE;
+}
+.insights {
+max-width: 300px;
+margin: auto;
+}
+.smaller-image {
+max-width: 600px;
+margin: auto;
 }
 
 /* Layout styling slavefreetrade */
@@ -471,7 +480,8 @@ Medium devices (640px and larger)
   }
 
   .sketch {
-    width: 400px;
+    max-width: 400px;
+    margin: auto;
   }
 
 
@@ -638,7 +648,7 @@ Large devices (1024px or larger)
     }
 
     .narrow {
-      max-width: 800px;
+      max-width: 900px;
       margin: auto;
     }
 

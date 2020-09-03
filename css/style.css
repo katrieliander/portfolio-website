@@ -659,6 +659,9 @@ Large devices (1024px or larger)
     .margin-bottom {
       margin-bottom: 30px;
     }
+    .margin-bottom-double {
+      margin-bottom: 60px;
+    }
   }
 }
 

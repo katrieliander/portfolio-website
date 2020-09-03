@@ -225,10 +225,6 @@ footer {
 .white-text {
   color: #ffffff;
 }
-.header-h3 {
-  color: #ffffff;
-  text-align: left;
-}
 .grey-background {
 background-color: #E0DFDF;
 }
@@ -317,6 +313,10 @@ margin: auto;
 #portfolio .section {
   background-color: #4120A9;
 }
+#slavefreetrade h3 {
+color: #103F75;
+}
+
 /* Layout styling Index page */
 .flexbox {
   display: flex;
@@ -332,6 +332,9 @@ margin: auto;
   margin-right: -50vw;
   padding-right: 50px;
   padding-left: 50px;
+}
+.margin-bottom {
+  margin-bottom: 30px;
 }
 
 
@@ -451,7 +454,7 @@ Medium devices (640px and larger)
   }
 
   h4 {
-    font-size: 1.20em;
+    font-size: 1.40em;
     font-weight: 500;
     margin-bottom: 0;
   }

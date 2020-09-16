@@ -487,7 +487,6 @@ Medium devices (640px and larger)
     margin: auto;
   }
 
-
   .highlights {
     font-size: 32px;
     padding: 0;
@@ -634,10 +633,6 @@ Large devices (1024px or larger)
       max-width: 900px;
       margin: auto;
     }
-
-  .container {
-    width: 1170px;
-  }
 
     .row {
       padding: 10px 0;

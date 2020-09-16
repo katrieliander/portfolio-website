@@ -635,11 +635,6 @@ Large devices (1024px or larger)
       margin: auto;
     }
 
-    @media print {
-  @page {
-    size: 330mm 427mm;
-    margin: 14mm;
-  }
   .container {
     width: 1170px;
   }
@@ -676,6 +671,6 @@ Large devices (1024px or larger)
     }
   }
 }
-}
+
 
 /* end of large device */

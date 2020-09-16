@@ -635,6 +635,15 @@ Large devices (1024px or larger)
       margin: auto;
     }
 
+    @media print {
+  @page {
+    size: 330mm 427mm;
+    margin: 14mm;
+  }
+  .container {
+    width: 1170px;
+  }
+
     .row {
       padding: 10px 0;
       /* 20px top and bottom, 0 left and right */
@@ -666,6 +675,7 @@ Large devices (1024px or larger)
       margin-bottom: 60px;
     }
   }
+}
 }
 
 /* end of large device */

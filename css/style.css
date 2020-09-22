@@ -297,6 +297,23 @@ margin: auto;
 #slavefreetrade .section {
   background-color: #2CAAE2;
 }
+/* Layout styling libertas */
+#libertas .case-header {
+  background-color: #FDE3E1;
+}
+
+#libertas .section {
+  background-color: #FDE3E1;
+}
+#libertas h1 {
+ color: #1A4074;
+}
+#libertas  h2 {
+ color: #1A4074;
+}
+#libertas h3 {
+color: #1A4074;
+}
 /* Layout styling portfolio*/
 #portfolio .case-header {
   background-color: #4120A9;

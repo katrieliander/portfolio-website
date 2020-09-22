@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Katri Eliander">
+  <link rel="icon" type="image/jpg" href="img/favicon.jpg"/>
+  <title>slavefreetrade Libertas People - Designing a staff survey app</title>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script defer src="javascript/all.js"></script>
+</head>
+<body id="libertas">
+  <header id="myHeader">
+    <div class="container">
+      <div class="navtoggle" id="myNavtoggle">
+        <a href="index.html"><img src="img/logo@2x.jpg" class="logo" alt="Katri Eliander"></a>
+        <nav>
+          <ul class="navigation">
+            <li><a href="index.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="files/Katri-Eliander-Resume.pdf" target="_blank">Resume</a></li>
+            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+          </ul>
+        </nav>
+      </div><!-- end container div-->
+    </div><!-- end navtoggle div-->
+  </header>
+  <main id="Main">
+    <div class="container">
+      <div class="full-width case-header">
+        <div class="row header">
+          <!-- open row-->
+          <div class="col-lg-6">
+            <!-- open first column-->
+            <h1>Libertas People staff app</h1>
+            <h3> <span style="color:#1A4074">Designing a survey app</span></h3>
+          </div><!-- end first column-->
+          <div class="col-lg-6">
+            <picture>
+              <source srcset="img/slavefreetrade/app/mockup.jpg" media="(max-width:767px)">
+              <img src="img/slavefreetrade/app/mockup@2x.jpg" alt="Header image mockups"></picture>
+          </div><!-- end image-->
+        </div><!-- end row-->
+      </div><!-- end header block-->
+      <div class="narrow">
+        <!-- open intro text block-->
+      <p>slavefreetrade is a rightstech NGO on a mission to deliver human rights to workplaces globally. They do it with the help of their core product Libertas - a human source intelligence system that discovers and maps supply chains, and assesses and monitors workplace conditions in real time. </p> <p>An important part of Libertas is <b>the survey that collects the information from employees</b> across workplaces. So far this survey has been sent via e-mail and other distribution methods but the next step was to create an app that can make the survey process more convenient.</p>
+        <h3>Goal</h3>
+<p>Design the user experience and interface for the survey app that is used by employees across workplaces. The main function of the app is to provide the survey to the users - it will collect information from employees via monthly surveys which will then be analyzed and tracked with the Libertas dashboard. </p>
+        <h3>Scope and timetable of the project</h3>
+        <p>To design the first iteration and MVP of the app in 3 weeks. After the MVP, the app will be further developed to include even more functionalities for employees and companies.
+The design work involved creating the <b>user flow, information architecture and the high-fidelity wireframes</b> for the app.</p>
+        <h3>Team</h3>
+        <p>Team: Yina Smith-Danenhower (UX/UI), Katri Eliander (UX/UI), Peter Irving (Flutter developer) & dev team, a Product Manager and Marketing.</p>
+<p>Yina and I were responsible for the entire design process. We defined the user flow and IA together and the wireframe designs we divided between us.</p>
+        <h3>Tools</h3>
+        <p>Figma, Zeplin, pen & paper</p>
+      </div><!-- end intro text block-->
+        <!-- open define and understand block-->
+        <div class="section full-width margin-bottom white-text">
+          <!-- open header block-->
+          <h2>Understand & Define</h2>
+        </div><!-- end header block-->
+        <div class="narrow">
+          <h3>The target audience and business requirements</h3>
+            <p>We started by getting an understanding of the target audience. The app's <b>target user is anyone who is working in the supply chains</b> of the companies or organizations that are using the Libertas human rights system. The target audience is hence a broad group of users with different levels of tech-savviness. It is therefore critical that the app is very <b>simple, easy to use and accessible</b>.
+We knew the following about the app and its requirements when we started:</p>
+              <ul>
+<li style="padding-bottom: 10px">Native app for Android / iOS (will be developed with Flutter).</li>
+<li style="padding-bottom: 10px">The core function of the app is to provide the survey to the user.</li>
+<li style="padding-bottom: 10px">The app will be downloaded by employees in workplaces via an invitation link.</li>
+<li style="padding-bottom: 10px">The app and survey are completely anonymous so no information given can be traced back to the user.</li>
+<li style="padding-bottom: 10px">The survey is monthly - every month there will be a new set of questions for the user to fill in.</li>
+<li style="padding-bottom: 10px">The app design needs to be simple and it has to be easy to use.</li>
+              </ul>
+              <h3>User flow</h3>
+              <p>As the survey appears monthly on the app for one year's time, users will return to the app each month to fill in the latest survey. The first survey contains 20 binary questions and the next 11 surveys contain 10 questions each.</p>
+                <p><b>For new users</b> the user flow will start when they open the app and <b>for returning users</b> the user flow starts with the push notification that informs them that a new survey is available to be filled in. The <b>success criteria</b> for both users is to successfully fill in the survey.</p>
+              <p><b>Entry point:</b> Open the app (first-time user) or push notification (returning user)</p>
+              <p><b>Success criteria</b>: Finishes survey</p>
+<div class="margin-bottom-double">
+            <picture>
+              <source srcset="img/slavefreetrade/app/user-flow.jpg" media="(max-width:767px)">
+              <img src="img/slavefreetrade/app/user-flow.jpg" class="center smaller-image" alt="user flow"></picture>
+            </div>
+              <div>
+                <!-- open define and understand block-->
+                <div class="section full-width margin-bottom white-text">
+                  <!-- open header block-->
+                  <h2>Ideation & Iteration</h2>
+                </div><!-- end header block-->
+                <h3>Information architecture</h3>
+                <p>The next step was to determine the IA of the app. The app needed to remain <b>as simple as possible</b> as the main task for the user is to complete the survey. In addition to the survey, we decided to add an informative "About" page so that users are able to find a bit more information within the app. We didn't want them to have to move away from the app to read more about slavefreetrade as an organization and the survey. </p>
+                <p>Together with the Product manager and the marketing team we decided on an information architecture shown below. We went a couple of times back and forth about having a "Profile" section but in the end it was decided, with input from the Director in charge of the research and surveys, that a profile is not necessary in the MVP. </p><p>The app has hence <b>four main sections: Onboarding, Home screen, Survey screens and About screen.</b> </p>
+                  <div class="margin-bottom-double">
+                                  <picture>
+                                    <source srcset="img/slavefreetrade/app/ia.jpg" media="(max-width:767px)">
+                                    <img src="img/slavefreetrade/app/ia.jpg" class="center smaller-image" alt="information architecture of app"></picture>
+                  </div>
+<h3>From sketches to high-fidelity iterations</h3>
+<p>As we were two designers working on the project, we divided the screens between us. I was responsible for designing the home screen and the survey screens. Below are the first sketches that I did for the user flow.</p>
+<div class="margin-bottom-double">
+                <picture>
+                  <source srcset="img/slavefreetrade/app/sketches.jpg" media="(max-width:767px)">
+                  <img src="img/slavefreetrade/app/sketches.jpg" class="center" alt="first sketches of survey flow"></picture>
+</div>
+<p>The home screen needed to be easy to understand with one primary call-to-action "Take survey". I iterated many times the home screen due to for example changes in the IA.</p>
+<ul>
+<li style="padding-bottom: 20px"><b>Accessibility:</b> I changed the icons so that they would be more describing and make the text content more easily understandable.</li>
+<li style="padding-bottom: 20px"><b>Tab bar:</b> When we still had the plan to include a "Profile" section, we included a tab bar in the app to make it easy for users to navigate between Home, About and Profile screens. However, as we in the end decided to skip the profile section in the MVP, we removed the tab bar to simplify the navigation. A tab bar would have been unnecessary with so few screens. Now, users can navigate to the About screens from the Home screen.</li>
+</ul>
+  <div class="margin-bottom-double">
+                  <picture>
+                    <source srcset="img/slavefreetrade/app/home-iterations.jpg" media="(max-width:767px)">
+                    <img src="img/slavefreetrade/app/home_iterations@2x.jpg" class="center" alt="iterations of home screen"></picture>
+</div>
+</div>
+<h3>The final UI of the app</h3>
+<p>The project is still in progress and will be finalized during October 2020. The final UI designs will be shown then.</p>
+</div>
+            <div class="center">
+              <!-- open final notes block-->
+              <p class="highlights"> Thank you for reviewing my work!</p>
+            </div><!-- end final notes block-->
+          </div><!-- end main-->
+  </main>
+  <footer id="contact">
+    <div class="container">
+      <!-- open whole orange block-->
+      <div>
+        <!-- open yellow container-->
+        <h4>Get in touch</h4>
+        <p><span style="font-size: 85%">I'm currently available for full-time or freelance work. Please don't hesitate to contact me for work opportunities or just a chat!</span></p>
+        <div>
+          <a href="https://www.linkedin.com/in/katri-eliander/" target="_blank"><img src="img/linkedin.png" alt="linkedin" class="image contact"></a>
+          <a href="mailto:katrieliander@gmail.com"><img src="img/email.png" alt="email" class="image contact"></a>
+        </div>
+        <div class="copyright">
+          <p>Copyright Katri Eliander 2020</p>
+        </div>
+      </div><!-- end yellow container-->
+    </div><!-- end whole orange block-->
+  </footer>
+  <script src="https://code.jquery.com/jquery-migrate-3.3.1.min.js" integrity="sha256-APllMc0V4lf/Rb5Cz4idWUCYlBDG3b0EcN1Ushd3hpE=" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+</body>
+</html>

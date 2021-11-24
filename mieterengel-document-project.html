@@ -50,11 +50,11 @@
 </div>
   <div class="narrow">
         <h3>The background & context</h3>
-        <p> The consultation flow starts with the customer submitting a question in the portal. The customer is required to type a message and often the lawyer needs some documents (e.g. rental contract, utility bill, termination letter) to be able to consult the customer. The customer can upload the documents through normal upload or take photos of documents with the camera function in the web app and upload them that way. </p>
-<p>Before the question is passed on to their lawyer, the service team reviews the request. If some important documents are missing, the service team contacts the customer via e-mail and asks them to upload the necessary documents. When new documents are uploaded, the service team reviews again the message and accepts it if everything is correct.</p>
+        <p> The consultation flow starts with the customer submitting a question in the portal. The customer is required to type a message and often the lawyer needs some case related documents (e.g. rental contract, utility bill, termination letter). The customer can either upload existing documents or take photos of documents with the camera function in the web app and upload them that way. </p>
+<p>Before the question is passed on to their lawyer, the service team reviews the request. If some important documents are missing, the service team contacts the customer via e-mail and asks them to upload the necessary documents. When new documents are uploaded, the service team reviews the message again and if everything is correct, they forward the request to the lawyer.</p>
 <h3>The problem</h3>
 <p>The initial problem statement came from our internal service team:</p>
-<p><i>”Often important documents are missing from customer’s questions which leads to much back and forth between the customer and the service team. Another problem is that customers very often upload single images that we need to merge before passing on the message to the lawyer. Both of these issues are very time consuming.”</i></p>
+<p><i>”Often important documents are missing from customer’s questions which leads to much back and forth between the customer and the service team. Another problem is that customers very often upload single images that we need to merge before forwarding the message to the lawyer. These steps are time consuming for us and also result in longer waiting times for the customers.”</i></p>
         <h3>My role</h3>
         <p>I worked together with our product manager on this project. We worked together on user research, analysis and concepting. I was responsible for the wireframing and designs.</p>
         <div class="row">
@@ -84,30 +84,32 @@
           </div><!-- end tools column-->
         </div><!-- end row-->
       </div><!-- end intro text block-->
-      <div>
-        <!-- open process block-->
-        <div class="narrow margin-bottom">
-        <h3>My design process</h3>
-        <p>My design process starting from defining the problem in November 2019 to having a refined and tested prototype in April 2020.</p>
-        <picture>
-          <source srcset="img/aida/process-desktop.jpg" media="(max-width:767px)">
-          <img src="img/aida/process-desktop@2x.jpg" alt="Design process"></picture>
-      </div><!-- end process block-->
+
       <div>
         <!-- open define and understand block-->
         <div class="section full-width margin-bottom-double">
           <!-- open header block-->
-          <h2>Understand & Empathize</h2>
+          <h2>Understand & Research</h2>
         </div><!-- end header block-->
         <div class="narrow margin-bottom">
-        <p>Finding a doctor can be difficult. It can be very time-consuming to find a suitable practitioner and sometimes you might end up with a doctor that just doesn't get you. This can be especially true for women. Women can feel uncomfortable turning to unfamiliar doctors with their most intimate issues and questions. Also, in today's modern world where most people are busy balancing work, family and social life, we long for solutions that will make our lives easier and more convenient.
-From this the initial thought of Aida - as a holistic and convenient healthcare solution - emerged.</p>
+        <p>Discussions with the service team made it clear that the biggest issues were: </p>
+        <ul>
+          <li>1:Single image uploads by customer -> Results in one of the most time-consuming tasks for the service team.</li>
+          <li>2:Important documents missing from customer questions -> Results in time-consuming steps for both service team & customers.</li>
+          </ul>
+          <p>The problem with the normal upload function is that each file/image selected (most often from the phone’s camera roll) is uploaded separately. This leads to situations where the service team has to individually download all the images and merge them into a single PDF. This is an extremely time-consuming task for the service agents and also is time wasted in a sense.</p>
+          <p>Another big problem is that customers often don’t attach important documents with their questions. This might be because they forget or they are not aware that they should attach this/these document(s). This results in extra work and time wasted as the service team has to ask for these documents from the customer and this also means that the customer has to wait for consultation longer.</p>
 </div>
 <div class="narrow margin-bottom-double">
-            <h3>Competitive analysis</h3>
-            <p>To get started, I had to get to know the market and the other players out there. I noticed that there are a few popular apps that connect users with doctors, and I chose two of them for a SWOT analysis.
-<b>KRY</b> is a Swedish company that in recent years has expanded to other European countries. <b>Maven Clinic</b> is an American company. </p>
-<h4>Insights from competitor analysis</h4>
+            <h3>Research</h3>
+            <p>The first step was to do user research in order to really identify the main paint points. As our target audience was both the service team and the customers, the user research phase included several steps in both qualitative & quantitativ research:
+              <ul>
+                <li>Hotjar recordings (see how customers behave on doc upload screens)</li>
+                <li>Customer calls (call customers that had uploaded single images and ask them why)</li>
+                <li>Tracking with GA (to understand the ratio of uploads on desktop vs. mobile and upload vs. camera app) - is a solution mostly needed on mobile or equally on desktop.</li>
+                <li>Actual customer data (we looked through 150 customer cases to see how they have uploaded)
+                  </ul>
+<h4>Insights from research</h4>
 <p>From the analysis I discovered that there is indeed a gap on the market for a well-functioning, holistic healthcare and wellness app specifically aimed for women. Maven Clinic only operates in USA and it
 is lacking some functionalities related to choosing a doctor based on certain criteria. KRY on the other hand is very focused on quick availability but lacks the human approach and the ability to choose your practitioner.</p>
 <div class="margin-bottom">

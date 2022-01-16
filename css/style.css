@@ -262,6 +262,23 @@ background-color: #E0DFDF;
   font-weight: 500;
 }
 
+/* Layout styling MieterEngel page */
+#mieterengel .section {
+  background-color: #228288;
+}
+
+#mieterengel .case-header {
+  background-color: #228288;
+}
+
+#mieterengel h3 {
+  color: #228288;
+  }
+
+#mieterengel h2 {
+    color: #ffffff;
+    }
+
 /* Layout styling Aida page */
 #aida .section {
   background-color: #E5D9EF;

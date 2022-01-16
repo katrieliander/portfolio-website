@@ -4,14 +4,14 @@
   <meta charset="utf-8">
   <meta name="author" content="Katri Eliander">
   <link rel="icon" type="image/jpg" href="img/favicon.jpg"/>
-  <title>Project Aida - an iOS healthcare app for women</title>
+  <title>MieterEngel - Improving the document upload flow in the customer app</title>
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script defer src="javascript/all.js"></script>
 </head>
-<body id="aida">
+<body id="mieterengel">
   <header id="myHeader">
     <div class="container">
       <div class="navtoggle" id="myNavtoggle">
@@ -35,122 +35,82 @@
         <div class="col-lg-6">
           <!-- open first column-->
           <h1>MieterEngel</h1>
-          <h3> <span style="color:white">Improving the document upload flow in the customer app</span></h3>
+          <h3> <span style="color:white">Improving the document upload flow in the customer portal</span></h3>
         </div><!-- end first column-->
         <div class="col-lg-6">
           <picture>
-            <source srcset="img/aida/aida-cover.jpg" media="(max-width:767px)">
-            <img src="img/aida/aida-cover@2x.jpg" alt="Header image"></picture>
+            <source srcset="img/mieterengel/document/header.png" media="(max-width:767px)">
+            <img src="img/mieterengel/document/header.png" alt="Header image"></picture>
         </div><!-- end image-->
       </div><!-- end row-->
     </div><!-- end header block-->
       <div class="narrow margin-bottom">
         <!-- open intro text block-->
-        <p>MieterEngel helps tenants solve rental problems online. Members gets access to the MieterEngel portal (web app) where they can directly connect with their personal lawyer by asking questions to any rental problem. They can choose to be consulted by phone or request the lawyer to write a written report.</p>
-</div>
-  <div class="narrow">
-        <h3>The background & context</h3>
-        <p> The consultation flow starts with the customer submitting a question in the portal. The customer is required to type a message and often the lawyer needs some case related documents (e.g. rental contract, utility bill, termination letter). The customer can either upload existing documents or take photos of documents with the camera function in the web app and upload them that way. </p>
-<p>Before the question is passed on to their lawyer, the service team reviews the request. If some important documents are missing, the service team contacts the customer via e-mail and asks them to upload the necessary documents. When new documents are uploaded, the service team reviews the message again and if everything is correct, they forward the request to the lawyer.</p>
-<h3>The problem</h3>
-<p>The initial problem statement came from our <b>internal service team:</b></p>
-<p><i>”Often important documents are missing from customer’s questions which leads to much back and forth between the customer and the service team. Another problem is that customers very often upload single images that we need to merge before forwarding the message to the lawyer. These steps are time consuming for us and also result in longer waiting times for the customers.”</i></p>
-        <h3>My role</h3>
-        <p>I worked together with our product manager on this project. We worked together on user research, analysis and concepting. I was responsible for the wireframing and designs.</p>
-        <div class="row">
-          <!-- open row for tools and skills-->
-          <div class="column-skills col-md-6 col-lg-6">
-            <!-- open skills column-->
-            <h3 class="center">Steps</h3>
-            <ul>
-              <li>Quantitative research </li>
-              <li>Qualitative research</li>
-              <li>Journey mapping</li>
-              <li>Wireframing</li>
-              <li>Prototyping</li>
-              <li>User testing</li>
-            </ul>
-          </div><!-- end skills column-->
-          <div class="column-skills col-md-6 col-lg-6">
-            <!-- open tools column-->
-            <h3 class="center">Tools</h3>
-            <ul>
-              <li>Miro</li>
-              <li>Sketch</li>
-              <li>Google Analytics</li>
-              <li>Google Tag Manager</li>
-              <li>Pen & paper</li>
-            </ul>
-          </div><!-- end tools column-->
-        </div><!-- end row-->
-      </div><!-- end intro text block-->
+        <p><b>Company:</b> <a href="https://mieterengel.de/" target="_blank">MieterEngel</a> - Berlin</p>
+        <p><b>My role:</b> UX Designer. I worked together with one Product manager on this project.</p>
+        <p><b>Skills:</b> Quantitative and qualitative user research, journey mapping, wireframing, prototyping, user testing</p>
+        <p><b>Tools</b>: Miro, Sketch, pen & paper, Marvel, Google Analytics & Google Tag Manager</p>
+        <p><b>Key objective:</b> Improve the document upload flow in the customer app to reduce time-consuming steps for the service team and improve the customer experience.</p>
+        <p><b>Resulted impact:</b> Approx. 100 hours/month saved in service work time as customers upload all necessary documents in 50% more cases.</p>
 
-      <div>
+      </div><!-- end intro text block-->
         <!-- open define and understand block-->
         <div class="section full-width margin-bottom-double">
           <!-- open header block-->
-          <h2>Understand & Research</h2>
+          <h2>Context & Background</h2>
         </div><!-- end header block-->
-        <div class="narrow margin-bottom">
-        <p>Our first discussions with the service team made it clear that the biggest issues were: </p>
-          <p><b>1. Single image uploads by customers </b></p>
-          <p>The main source for this problem we could verify immediately. The problem with the normal upload function is that each file/image selected (most often from the phone’s camera roll) is uploaded separately. This can lead to customer messages with up to 50 single images attached. The service team then has to merge these images together to documents that make sense for the lawyer.</p>
-<p>Why a problem? Results in one of the most time-consuming tasks for the service team.</p>
-          <p><b>2. Important documents missing from customer questions</b></p>
-          <p>At this stage we could only make assumptions why customers didn't upload needed documents. Our guesses were that they might either forget or that they are not aware that they should attach this/these document(s).</p>
-<p> Why a problem? Results in time-consuming steps for both service team and customers. 
-</div>
-<div class="narrow margin-bottom-double">
-            <h3>Research</h3>
-            <p>The next step after discussing and getting insights from the service team, was to do user research in order to really identify the main paint points. As our target audience was both the service team and the customers, the user research phase included several steps in both qualitative & quantitativ research:
-              <ul>
-                <li>Hotjar recordings (see how customers behave on doc upload screens)</li>
-                <li>Customer calls (call customers that had uploaded single images and ask them why)</li>
-                <li>Tracking with GA (to understand the ratio of uploads on desktop vs. mobile and upload vs. camera app) - is a solution mostly needed on mobile or equally on desktop.</li>
-                <li>Actual customer data (we looked through 150 customer cases to see how they have uploaded)
-                  </ul>
-<h4>Insights from research</h4>
-<p>From the analysis I discovered that there is indeed a gap on the market for a well-functioning, holistic healthcare and wellness app specifically aimed for women. Maven Clinic only operates in USA and it
-is lacking some functionalities related to choosing a doctor based on certain criteria. KRY on the other hand is very focused on quick availability but lacks the human approach and the ability to choose your practitioner.</p>
-<div class="margin-bottom">
-            <picture>
-              <source srcset="img/aida/competitive-analysis.jpg" media="(max-width:767px)">
-              <img src="img/aida/competitive-analysis@2x.jpg" class="smaller-image center" alt="Competitive analysis"></picture>
-</div>
-        </div><!-- end competitive analysis row-->
-          <div class="narrow margin-bottom"> <!-- open text column-->
-            <h3>User research</h3>
-            <p>After I had gotten to know the market, the next step was to get to know the potential users. I wanted to understand their behavior around healthcare and their biggest frustrations, wishes and challenges related to it. I decided to conduct a <b>quantitative survey and 5 in-person
-                interviews</b> to get an understanding both on the width and depth. In the end I conducted several rounds of affinity mapping to group the findings and get a full understanding what they really meant.</p>
-        </div><!-- end text-->
         <div class="narrow">
-          <picture>
-            <source srcset="img/aida/survey.jpg" media="(max-width:767px)">
-            <img src="img/aida/survey@2x.jpg" alt="Survey answers"></picture>
-<div class="margin-bottom">
-          <picture>
-            <source srcset="img/aida/affinity-map.jpg" media="(max-width:767px)">
-            <img src="img/aida/affinity-map@2x.jpg" class="smaller-image center" alt="Affinity map"></picture>
-          </div>
-            <h4 class="margin-bottom center">Insights from user research</h4>
-<div class="margin-bottom-double margin-bottom">
-            <picture>
-              <source srcset="img/aida/user-insights.jpg" media="(max-width:767px)">
-              <img src="img/aida/user-insights@2x.jpg" class="insights center" alt="User insights"></picture>
-          </div>
-        </div>
-            </div><!-- end insights row-->
-            <div class="narrow">
-                <h3>Information Architecture</h3>
-                <p>I chose a hierarchical structure for the sitemap. The app will have a few main functionalities but it won't be too complex. Hence, a <b>hierarchical structure</b> with a couple of main pages that allow the user to proceed deeper
-                  into the task, was a suitable solution. The sitemap was refined with the help of an <b>open card sorting</b>. 10 participants took part in the card sort.</p>
+              <p>MieterEngel helps tenants solve rental problems online. Members gets access to the MieterEngel portal where they can directly connect with their personal lawyer and ask questions to any rental problem.</p>
+
+              <p> The consultation flow starts with the customer submitting a question in the customer portal. The customer is required to type a message and often the lawyer needs some case related documents as well e.g. rental contract, utility bill, termination letter. The customer can either upload existing files/images or take photos of documents with the camera function in the web app and upload them that way. </p>
+              <p>The service team reviews the request and if some important documents are missing, the customer is asked to upload these before the message is forwarded to the lawyer.</p>
+
+              <picture>
+                <source srcset="img/mieterengel/document/user-flow.jpg" media="(max-width:767px)">
+                <img src="img/mieterengel/document/user-flow.jpg" alt="User flow"></picture>
+        <h3>Problem statement</h3>
+        <p>The initial problem statement came from our internal service team:</p>
+        <p>”Often <b>important documents are missing</b> from customer’s questions which leads to much back and forth between the customer and the service team. Another problem is that customers very often upload single images that we need to merge before forwarding the message to the lawyer. These steps are <b>time consuming</b> for us and also result in <b>longer waiting times for the customers</b>.”</p>
+        <h3>Existing (old) user flow for document upload</h3>
+<p> Below you can see the existing document upload flow in the customer app on mobile. The same logic applied for desktop. The upload flow differed slightly for customers that submitted their first question because in that case the rental contract was required as well. The customer was in that case unable (CTA disabled) to submit the message without attaching the rental contract.
+</div>
 <div class="margin-bottom-double">
-                <picture>
-                  <source srcset="img/aida/sitemap.jpg" media="(max-width:767px)">
-                  <img src="img/aida/sitemap.jpg" alt="Sitemap"></picture>
-                </div>
-            </div><!-- end IA row-->
-          <div>
+              <picture>
+                <source srcset="img/mieterengel/document/current-upload-flow.jpg" media="(max-width:767px)">
+                <img src="img/mieterengel/document/current-upload-flow.jpg" alt="Old upload flow"></picture>
+              </div>
+        <div class="section full-width margin-bottom-double">
+          <!-- open header block-->
+          <h2>User research</h2>
+        </div><!-- end header block-->
+<div class="narrow margin-bottom-double">
+            <div class="narrow margin-bottom">
+              <h4>Findings from service team</h4>
+              <p><b>Problem 1: Single image uploads by customers </b></p>
+              <p>The main source for this problem we could verify immediately. The problem with the normal upload function is that each file/image selected (most often from the phone’s camera roll) is uploaded separately. This can lead to customer messages with up to 50 single images attached. The service team then has to merge these images together to documents that make sense for the lawyer.</p>
+              <p><b>Problem 2: Important documents missing from customer questions</b></p>
+              <p>At this stage we could only make assumptions why customers didn't upload needed documents. Our guesses were that they might either forget or that they are not aware that they should attach these documents.</p>
+            </div>
+<h4>Customer research</h4>
+            <p>The next step after discussing and getting insights from the service team was to do customer research in order to identify the root of the problem. This phase included several steps in both qualitative & quantitative research:
+              <ul>
+                <li><b>Hotjar recordings</b> to see how customers behave on the document upload screens.</li>
+                <li><b>Customer calls</b> to interview customers that had just recently uploaded either single images or submitted a question without the needed documents. The goal was to understand why the customer had acted this way. </li>
+                <li><b>Tracking with Google Analytics and Tag Manager</b> to understand the ratio of uploads on different devices (desktop vs. mobile) and method (upload vs. camera app). This helped to understand behavior and problems across devices.</li>
+                <li><b>Actual customer data</b> - we went through +150 customer cases to get a further understanding of actual customer behavior.</li>
+                  </ul>
+<h4>Insights from customer research</h4>
+<p>The main findings from the quantitative and qualitative research are below. The research confirmed that the main issues were missing documents and single image uploads. Missing individual pages (e.g. from rental contracts) turned out to be almost as big of a problem as entire documents missing. </p>
+  <p>The quantitative research was important in order to identify the problem(s) that needed most urgently a fix.</p>
+<div class="margin-bottom">
+            <picture>
+              <source srcset="img/mieterengel/document/customer-research-findings.jpg" media="(max-width:767px)">
+              <img src="img/mieterengel/document/customer-research-findings.jpg" alt="Customer research findings"></picture>
+              <picture>
+                <source srcset="img/mieterengel/document/research-quantitative.jpg" media="(max-width:767px)">
+                <img src="img/mieterengel/document/research-quantitative.jpg" alt="Research findings"></picture>
+</div>
+            </div><!-- end insights row-->
             <!-- open ideate and prototype block-->
             <div class="section full-width margin-bottom-double">
               <!-- open header block-->
@@ -158,147 +118,56 @@ is lacking some functionalities related to choosing a doctor based on certain cr
             </div><!-- end header block-->
             <div class="narrow margin-bottom-double">
               <!-- open sketching block-->
-              <h3>Sketching</h3>
-              <p>I started the designing process by sketching out ideas with pen and paper. I sketched wireframes for the key functionalities and screens that were presented in the user flows:</p>
-              <ol>
-                <li>Find and message a practitioner</li>
-                <li>Go to scheduled call & book the next call</li>
-                <li>Leave a review for a practitioner</li>
-              </ol>
-              <p>From the sketches, the screens slowly started to take shape. After sketching, I moved to creating mid-fidelity wireframes in Balsamiq and thereafter in Adobe XD.</p>
-            </div><!-- end sketching block-->
-            <div class="narrow margin-bottom">
-                <h3>Navigation</h3>
-                <p>I chose a bottom tab bar as navigation. The navigation includes four tabs: Home, Find care, Messages and My profile. The sitemap transformed in quite a straightforward way to the navigation. The five main categories from the
-                  sitemap were incorporated in the navigation. In addition to these, "Messages" was included in the navigation. This enables the user to easily and quickly navigate to all important areas of the app.</p>
-<div class="margin-bottom-double">
-                <picture>
-                  <source srcset="img/aida/navigation-desktop.jpg" media="(max-width:767px)">
-                  <img src="img/aida/navigation-desktop.jpg" alt="Sitemap"></picture>
-                </div>
-            <div class="margin-bottom">
-              <h3>Low and mid-fidelity wireframes</h3>
-                <h4>User flow 1: Find and message practitioner</h4>
-                  <p>The task of finding and messaging a practitioner should be as uncomplicated and quick as possible. When a user has a question to ask on-the-go, it is important that they are able to easily navigate to the messaging function. </p>
-                  <picture>
-                    <source srcset="img/aida/wireframes1.jpg" media="(max-width:767px)">
-                    <img src="img/aida/wireframes1.jpg" alt="Wireframes"></picture>
-              </div><!-- end first row-->
-              <div class="margin-bottom-double">
-                <h4>User flow 2: Go to scheduled call & book next call</h4>
-                  <p class="margin-bottom">This flow was designed for the user that wishes to build a long-term relationship with a specific practitioner and perhaps book calls with that practitioner on a regular
-                    basis. The flow starts with a notification about the upcoming call and after the call the user is presented with the option to book a new call.</p>
-</div>
-                  <picture>
-                    <source srcset="img/aida/wireframes2.jpg" media="(max-width:767px)">
-                    <img src="img/aida/wireframes2.jpg" alt="Wireframes"></picture>
-              </div>
-            <div class="narrow margin-bottom">
-              <!-- open wireframes two block-->
-              <h3 class="margin-bottom">From mid-fidelity to high-fidelity wireframes</h3>
-<div class="margin-bottom-double">
-              <picture>
-                <source srcset="img/aida/High-fi2.jpg" media="(max-width:767px)">
-                <img src="img/aida/High-fi2@2x.jpg" alt="Wireframes"></picture>
-              </div>
-            </div><!-- end wireframes two block-->
-          </div><!-- end ideate and prototype block-->
-          <div>
-            <!-- open test and refine block-->
-            <div class="section full-width margin-bottom-double">
-              <!-- open header block-->
-              <h2>Test & refine</h2>
-            </div><!-- end header block-->
-            <div class="narrow margin-bottom-double">
-              <!-- open first row-->
-              <h3>User tests</h3>
-              <p>Finally it was time to test my prototype with real users. The goal of the user tests was to evaluate the key functionalities and features of the app and observe how users interact with the app. I wanted to see what users find
-                challenging with the app in order to further improve the design. The tests took in average 30 minutes. I specified <b>five test objectives</b> based on the key functionalities. I created direct as well as scenario questions in order
-                to test them. I wanted to see for instance whether users knew where to navigate in order to leave a review. It was very exciting to see how users interacted with the first prototype!</p>
-                <h4>Affinity map & Rainbow spreadsheet</h4>
-                <p>I organized all my findings first in affinity maps. Thereafter I summarized the 30 key findings from the tests in a Rainbow spreadsheet. I used Jakob Nielsen's scale from 1 to 5 to evaluate the severity of each error or improvement
-                  idea.</p>
-                <picture>
-                  <source srcset="img/aida/user-test-affinity.jpg" media="(max-width:767px)">
-                  <img src="img/aida/user-test-affinity.jpg" alt="User test insights"></picture>
-              </div><!-- end second column-->
-            </div><!-- end second row-->
-            <div class="narrow margin-bottom-double">
-              <h3>From feedback & own learnings to new improved iterations</h3>
-              <p>Most participants completed the five tasks quite easily and effortlessly, and no major usability errors were discovered. The tests revealed things that the participants, however, felt a bit hesitant or confused about. Participants
-                also came with good improvement ideas and suggestions.</p>
-              <p>Based on the user feedback and observations, a few bigger improvements were made. Users had for instance felt confused about the payment structure on the app. These issues were evaluated as critical and improved immediately.</p>
-              <p>After the user tests, further iterations were made before the final mockups were reached. I also invited fellow students to review my work and give feedback.</p>
-                <h4>Improvement #1: Filtering & sorting</h4>
-                <p>A couple of users wished to be able to filter also by price and first availability. These options were added as filters and also as sorting options. The amount of matching practitioners was also added to the button. In the final
-                  design, the sorting has been separated from the filtering to make it easier for users to access it.</p>
-                <picture>
-                  <source srcset="img/aida/iterations1.2.jpg" media="(max-width:767px)">
-                  <img src="img/aida/iterations1.2@2x.jpg" alt="Iterations of filter"></picture>
-              </div>
-            <div class="narrow margin-bottom-double">
-              <h4>Improvement #2: Profile of practitioner</h4>
-              <p>Based on user feedback price, next available appointments and current work place were added to the practitioner profile. The buttons were locked so that they are always visible to the user. Tabs for "About" and "Reviews" were added
-                to have a clear and easy way of presenting reviews.</p>
-              <picture>
-                <source srcset="img/aida/iterations2.jpg" media="(max-width:767px)">
-                <img src="img/aida/iterations2@2x.jpg" alt="Iterations of profile"></picture>
-            </div><!-- end first column-->
-            <div class="narrow margin-bottom-double">
-                            <h4>Improvement #3: List of practitioners</h4>
-                <p>Users wished to see more information (price, amount of reviews and first availability) in the list view. These were added for each practitioner.</p>
-                <p>In the final design, the filter has been moved down on the screen and the sort function is located on the opposite side of it. There they are easily visible to the user. In the user tests a few users didn't see the filter option
-                  when it was located in the top right corner.</p>
-                <picture>
-                  <source srcset="img/aida/iterations3.jpg" media="(max-width:767px)">
-                  <img src="img/aida/iterations3@2x.jpg" alt="Iterations of list"></picture>
-              </div><!-- end second column-->
-              <div class="narrow margin-bottom-double">
-                <h4>Improvement #4: Home page</h4>
-                <p>A few test participants stated that for them the focus of the app felt a bit unclear on the home screen and they weren't sure how to proceed in order to connect with someone.</p>
-                <p> Two users said that the notification on the top of the screen felt a bit pushy and the search field in the middle felt out of place.</p>
-                <ul>
-                  <li>The search field was moved on top of the screen as then it's equally located on both the home screen and the "Search" screen. This way users find it in the same place across screens. </li>
-                  <li>The call reminder was placed under the name as there it's more connected to the name and creates a small personalized section on the home screen.</li>
-                </ul>
-                <picture>
-                  <source srcset="img/aida/iterations5.jpg" media="(max-width:767px)">
-                  <img src="img/aida/iterations5@2x.jpg" alt="Iterations of home screen"></picture>
-            </div><!-- end fourth row-->
-            <div class="margin-bottom">
-              <h3 class="margin-bottom center">Styleguide</h3>
-              <picture>
-                <source srcset="img/aida/styleguide.jpg" media="(max-width:767px)">
-                <img src="img/aida/styleguide@2x.jpg" alt="Styleguide"></picture>
-            </div><!-- end styleguide block-->
-              <h3 class="margin-bottom center">Final mockups</h3>
-          <div class="full-width aida-lila-background margin-bottom-double">
-              <picture>
-                <source srcset="img/aida/mockups.jpg" media="(max-width:767px)">
-                <img src="img/aida/mockups@2x.jpg" alt="Final mockups"></picture>
-              </div>
-          <div>
-            <!-- open test block-->
-            <h3 class="center margin-bottom-double"> <a href="https://xd.adobe.com/view/ed2e8a7e-ec45-4cd8-7410-7ce8024585fd-9b1f/" target="_blank">Try out the Aida prototype yourself</a></h3>
-          </div><!-- end test block-->
-          <div class="section full-width margin-bottom-double">
-            <!-- open header block-->
-            <h2>Final thoughts & learnings</h2>
-          </div><!-- end header block-->
-        <div class="narrow">
-        <p>Working on this project was a huge learning experience to me. It was the first time that I designed a mobile app, all the way from start to a working prototype. Considering that this was my first proper UX design project, I'm very satisfied with the end product. Here are a few of the key learnings from this project.</p>
-        <h4>What went well:</h4>
-        <ul>
-          <li style="padding-bottom: 20px"><b>Valuable insights from user research:</b> I’m pleased with the way that I managed to translate my user's needs and challenges into a design that helps to solve them (one of my user's said in the usability test that she really wishes this app actually existed!). With the help of my user research and user personas, I  was able to create clear user flows & journeys that made sense for the personas. These flows provided valuable guidance in creating the structure and IA of the app.
-</li>
-          <li style="padding-bottom: 20px"><b>UI design:</b> I’m satisfied with the final UI design. As someone with no prior experience in UI design, I think I was able to create an interface that is attractive and joyful to use. It also conveys the Aida brand image that I had in mind for the product.
-</li>
-          <li style="padding-bottom: 20px"><b>Iterating after user testing</b>: The user tests gave me valuable feedback for improving my prototype. However, in the future, I will test my design even earlier in the design process. This will help me to minimize the time that I waste on design details that I might anyway iterate on after the user's feedback.</li>
+              <p>During the ideation phase we explored multiple versions and ideas that aimed to solve the main problems of missing documents/pages and single image uploads. Below some of the early versions and wireframes.</p>
+              <ul>
+                <li>We explored with the idea of a <b>funnel</b> that would change the user flow so that all users would have to go through the document upload screen. On this screen they could also then see the document categories and identify the most common documents that are needed for their topic. Alternatively they could make a concious decision not to upload anything.</li>
+          <li><b>New document screen with categories</b> that would display to the user common documents and help user to understand what documents can be needed.</li>
         </ul>
-        <h4>What didn't go well / What can I improve:</h4>
-        <ul>
-          <li style="padding-bottom: 20px"><b>Testing earlier:</b> As I already mentioned, I could have tested my design with users even earlier. I spent quite a lot of time on small details on my mid and high fidelity wireframes, even though I ended up changing them many times after that. So to make my design process smoother and more efficient in the future, I will make sure to first confirm the structure and layout with the help of user tests, and only after that proceed to designing high-fidelity wireframes. </li>
-<li style="padding-bottom: 20px"><b>Limitations in user research:</b> I would have liked to do a more extensive user research in the beginning of the project but this wasn't possible due to the time and budget limitations that I faced. With more time and resources, I would have conducted more interviews to deepen my understanding about the target audience.</li>
+</div>
+<div class="margin-bottom-double">
+              <picture>
+                <source srcset="img/mieterengel/document/versions.jpg" media="(max-width:767px)">
+                <img src="img/mieterengel/document/versions.jpg" alt="Research findings"></picture>
+</div>
+              <div class="narrow margin-bottom-double">
+                <p> After the ideation phase, we presented and reviewed a few different versions with stakeholders. We also got feedback from our tech team about the technical feasability and effort for the different options. This allowed us to <b>evaluate the options based on their effort and estimated impact</b>. The funnel solution turned out to be technically very hard to implement with the existing system and therefore we had to leave out the idea.</p>
+<p>From the different iterations we identified, however, some valuable components that we wanted to have in the new user flow:</p>
+<p><b>1. Categories for documents</b></p>
+  <p>Display document categories that will depend on the rental problem topic. This will help service team to organize files and it helps the customer to know what documents are needed.</p>
+<p><b>2. Make users confirm that they don't have any documents to upload</b></p>
+  <p>Make the user make a conscious decision that they in fact don't want to upload any documents. This way it's less likely that users simply forget to upload.</p>
+<p><b>3. Infom customer that ALL pages of a document are needed</b></p>
+  <p>Some kind of component to inform and remind the customer that all pages of a document should be uploaded - not just some pages.</p>
+  <p><b>4. Merge single uploaded images</b></p>
+  <p> As one of the most time-consuming tasks for the service team was to manually download and merge individually uploaded images, a solution to automatically merge images that are uploaded together needed to be implemented.</p>
+            </div><!-- end sketching block-->
+              <!-- open ideate and prototype block-->
+              <div class="section full-width margin-bottom-double">
+                <!-- open header block-->
+                <h2>New document upload flow</h2>
+              </div><!-- end header block-->
+            <div class="narrow margin-bottom">
+<p>Below is the new final document upload flow in the customer app. The new additions are marked with a star and explained below. Due to technical and time constraints we had to leave out some of the wished additions but the final solution still managed to improve the main issues in the upload flow.</p>
+</div>
+<div class="margin-bottom-double">
+                  <picture>
+                    <source srcset="img/mieterengel/document/new-upload-flow-2.jpg" media="(max-width:767px)">
+                    <img src="img/mieterengel/document/new-upload-flow-2.jpg" alt="New document upload flow"></picture>
+              </div><!-- end first row-->
+              <div class="narrow margin-bottom-double">
+<h4>1. Solution for single images</h4>
+<p>Before all the images that the user selected and uploaded from their camera roll or laptop were individually uploaded as single files. These files were also often missing names as customers forgot to name them.</p>
+<p>Now when user selects multiple images, these are automatically merged into one single PDF. Based on the category, a name is also automatically generated for the document.</p>
+<h4>2. Solution for missing documents</h4>
+<p> For each rental topic (e.g. mold, utility bill, deposit) we identified together with the service team the most common documents. These are now displayed on the screen which helps customers to identify which documents might be needed for their case and it also works as a reminder for them to upload these.</p>
+<p> For some topics the lawyer nearly always needs specific documents, for example photos of the mold if the issue is mold. Therefore, we added a popup that will only be displayed if the user submits their mold-related question without having uploaded a document under the category "Photos of mold". </p>
+<h4>3. Solution for missing pages</h4>
+<p>Another issue was missing individual pages mostly in rental contracts. Now when users are about to upload their contract, they will see a popup that informs them to upload all pages and make sure that they are readable. User has to confirm by clicking "Understood" in order to proceed.</p>
+<h3>Success metrics and impact</h3>
+<p>The new document upload flow has been live since September 2021 and we have seen the following impact:</p>
+<ul>
+  <li>Approx. 100 hours/month saved in service work time</li>
+  <li>Customers upload all necessary documents in 50% more cases (when submitting their first question)</li>
 </ul>
 </div>
           <div class="narrow margin-bottom-double">

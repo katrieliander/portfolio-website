@@ -229,6 +229,11 @@ footer {
 background-color: #E0DFDF;
 }
 
+.highlights {
+  font-size: 28px;
+  padding: 60px;
+}
+
 
 /* Layout styling about page */
 #about-section {
@@ -510,11 +515,6 @@ Medium devices (640px and larger)
   .sketch {
     max-width: 400px;
     margin: auto;
-  }
-
-  .highlights {
-    font-size: 32px;
-    padding: 0;
   }
 
   #hero {

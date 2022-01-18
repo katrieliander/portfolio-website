@@ -120,8 +120,8 @@
               <!-- open sketching block-->
               <p>During the ideation phase we explored multiple versions and ideas that aimed to solve the main problems of missing documents/pages and single image uploads. Below some of the early versions and wireframes.</p>
               <ul>
-                <li>We explored with the idea of a <b>funnel model</b> that would change the user flow so that all users would have to go through the document upload screen. On this screen they could also then see the document categories and identify the most common documents that are needed for their topic. Alternatively they could make a concious decision not to upload anything.</li>
-          <li><b>New document screen with categories</b> that would display to the user common documents and help user to understand what documents can be needed.</li>
+                <li>We explored with the idea of a <b>funnel model</b> that would change the user flow so that all users would have to go through the document upload screen. On this screen they could also then see the document categories and identify the most common documents that are needed for their topic. This would work as a trigger for users to upload files. Alternatively they could make a concious decision not to upload anything.</li>
+          <li><b>New document screen with categories</b> that would display the most common documents and help user to understand what documents might be needed.</li>
         </ul>
 </div>
 <div class="margin-bottom-double">
@@ -131,17 +131,17 @@
 </div>
               <div class="narrow margin-bottom-double">
                 <h4>Review and testing </h4>
-                <p> After the ideation phase, we presented and reviewed different user flows with stakeholders. We had named the versions as <b>MVP, MVP+ and MVP++</b> based on their implementation effort. We did some user testing with our service team and made a couple small changes based on their feedback. </p>
+                <p> After the ideation phase, we presented and reviewed three different user flows with stakeholders. We had named the versions as <b>MVP, MVP+ and MVP++</b> based on our estimation on the implementation effort. We also did some user testing with our service team and made a couple small changes based on their feedback. </p>
                 <p>Our tech team gave us feedback about the technical feasability and detailed effort for the different options. This allowed us to <b>evaluate the options based on their effort and estimated impact</b>. The funnel solution turned out to be technically very hard to implement with the existing system and therefore we had to deprioritize that idea.</p>
 <p>From the different iterations we identified, however, some valuable components that we wanted to have in the new user flow:</p>
 <p><b>1. Categories for documents</b></p>
   <p>Display document categories that will depend on the rental problem topic. This will help service team to organize files and it helps the customer to know what documents are needed.</p>
 <p><b>2. Make users confirm that they don't have any documents to upload</b></p>
   <p>Make the user make a conscious decision that they in fact don't want to upload any documents. This way it's less likely that users simply forget to upload.</p>
-<p><b>3. Infom customer that ALL pages of a document are needed</b></p>
-  <p>Some kind of component to inform and remind the customer that all pages of a document should be uploaded - not just some pages.</p>
+<p><b>3. Infom customer that all pages of a document are needed</b></p>
+  <p>Some kind of component to inform and remind the customer that all pages of a document should be uploaded - not just a few pages.</p>
   <p><b>4. Merge single uploaded images</b></p>
-  <p> As one of the most time-consuming tasks for the service team was to manually download and merge individually uploaded images, a solution to automatically merge images that are uploaded together needed to be implemented.</p>
+  <p> As one of the most time-consuming tasks for the service team was to manually download and merge uploaded images, a solution to automatically merge images that are uploaded together needed to be implemented.</p>
             </div><!-- end sketching block-->
               <!-- open ideate and prototype block-->
               <div class="section full-width margin-bottom-double">
@@ -149,7 +149,7 @@
                 <h2>New document upload flow</h2>
               </div><!-- end header block-->
             <div class="narrow margin-bottom">
-<p>Below is the new final document upload flow in the customer app. Due to technical and time constraints we had to leave out some of the wished additions but the final solution still managed to improve the upload flow significantly.</p>
+<p>Below is the new final document upload flow in the customer app. Due to technical and time constraints we had to compromise on some things but the final solution still managed to improve the upload flow significantly.</p>
 </div>
 <div class="margin-bottom-double">
                   <picture>
@@ -178,7 +178,7 @@
   <div class="col-lg-6">
 <h4>Change #2 to solve the issue of missing documents</h4>
 <p> For each rental topic (e.g. mold, utility bill, deposit) we identified together with the service team the most common documents. These are now displayed on the screen which helps customers to identify which documents might be needed for their case and it also works as a reminder for them to upload these.</p>
-<p> For some topics the lawyer nearly always needs specific documents, for example photos of the mold if the issue is mold. Therefore, we added a popup that will only be displayed if the user submits their mold-related question without having uploaded a document under the category "Photos of mold". </p>
+<p> For some topics the lawyer nearly always needs specific documents, for example photos of reported defect. Therefore, we added a popup with the logic that it will only be displayed if the user submits their defect-related question without having uploaded a file under the category "Photos of defect". In other cases this popup is not displayed to avoid annoying users.</p>
 </div>
 </div>
 <div class="row margin-bottom-double">

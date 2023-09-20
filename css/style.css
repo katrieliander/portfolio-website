@@ -193,6 +193,8 @@ nav>ul>li>a:active {
   padding-bottom: 10px;
   display: inline-block;
   text-align: center;
+  background-color: #83FFAD; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to bottom right, #83FFAD, #4A44E9);
   width: 100%;
 }
 

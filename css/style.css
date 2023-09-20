@@ -32,9 +32,10 @@ h2, h3, h4 {
 }
 
 h1 {
-  font-size: 1.80em;
+  font-size: 1.70em;
   font-weight: 600;
   text-align: center;
+  color: white;
 }
 
 h2 {
@@ -188,20 +189,22 @@ nav>ul>li>a:active {
   color: #4A44F2 !important;
 }
 
+main {
+  padding-top: 70px;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
 #hero {
   padding-top: 10px;
   padding-bottom: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
   display: inline-block;
   text-align: center;
   background-color: #83FFAD; /* For browsers that do not support gradients */
   background-image: linear-gradient(to bottom right, #83FFAD, #4A44E9);
   width: 100%;
-}
-
-main {
-  padding-top: 70px;
-  padding-right: 20px;
-  padding-left: 20px;
 }
 
 footer {
@@ -468,8 +471,8 @@ Medium devices (640px and larger)
   }
 
   h1 {
-    font-size: 3.20em;
-    font-weight: 700;
+    font-size: 2.30em;
+    font-weight: 500;
     margin-bottom: 0;
   }
 
@@ -520,8 +523,9 @@ Medium devices (640px and larger)
   }
 
   #hero {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 110px;
+    padding-bottom: 110px;
+    margin-bottom: 80px;
   }
 
   .image.profile {
@@ -594,7 +598,7 @@ Medium devices (640px and larger)
 
   .button {
     font-size: 0.95em;
-    padding: 15px 20px 15px 20px;
+    padding: 10px 30px 10px 30px;
   }
 
   .row {

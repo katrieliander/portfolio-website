@@ -269,6 +269,7 @@ background-color: #E0DFDF;
 
 #about-page h2 {
   margin: 10px;
+  padding-top: 40px;
 }
 
 .no-italics {
@@ -537,7 +538,7 @@ Medium devices (640px and larger)
   }
 
   #about-page main {
-    padding-top: 150px;
+    padding-top: 110px;
   }
 
   .col-md-6 {
@@ -601,7 +602,7 @@ Medium devices (640px and larger)
   }
 
   .button {
-    font-size: 0.95em;
+    font-size: 1em;
     padding: 10px 30px 10px 30px;
   }
 

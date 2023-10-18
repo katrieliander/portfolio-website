@@ -68,7 +68,7 @@ img {
   margin: 0 auto;
   text-align: center;
   padding-bottom: 30px;
-  border-top: 2px solid #0E0314;
+  background-color: #F7F6f3
 }
 
 .blue {
@@ -206,7 +206,7 @@ main {
   display: inline-block;
   text-align: center;
   background-color: #83FFAD; /* For browsers that do not support gradients */
-  background-image: linear-gradient(to bottom right, #83FFAD, #4A44E9);
+  background-image: linear-gradient(to bottom left, #83FFAD, #4A44E9);
   width: 100%;
 }
 
@@ -475,7 +475,7 @@ Medium devices (640px and larger)
   }
 
   h1 {
-    font-size: 2.60em;
+    font-size: 2.50em;
     font-weight: 500;
     margin-bottom: 0;
   }
@@ -527,8 +527,8 @@ Medium devices (640px and larger)
   }
 
   #hero {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 130px;
+    padding-bottom: 130px;
     margin-bottom: 80px;
   }
 

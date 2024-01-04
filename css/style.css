@@ -357,6 +357,14 @@ color: #1A4074;
 color: #103F75;
 }
 
+/* Layout styling livestreampro */
+#livestreampro .case-header {
+  background-color: #161515;
+}
+#livestreampro h1 {
+ color: #f2f2f2;
+}
+
 /* Layout styling Index page */
 .flexbox {
   display: flex;
